@@ -1566,5 +1566,131 @@
         "placement": "Winner"
       }
     ]
+  },
+  {
+    "name": "Kitty Catastrophe",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "14th"
+      }
+    ]
+  },
+  {
+    "name": "Beef Supreme",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "13th"
+      }
+    ]
+  },
+  {
+    "name": "Britney Shears",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "12th (Orig 14th)"
+      }
+    ]
+  },
+  {
+    "name": "Diamond",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "11th"
+      }
+    ]
+  },
+  {
+    "name": "Ariana Venti",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "10th"
+      }
+    ]
+  },
+  {
+    "name": "Morticia Hex",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "9th (Orig 13th)"
+      }
+    ]
+  },
+  {
+    "name": "Astral Alura",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Meta Morphia",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "7th"
+      }
+    ]
+  },
+  {
+    "name": "Rita Brooke",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "6th"
+      }
+    ]
+  },
+  {
+    "name": "Crimson",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "5th"
+      }
+    ]
+  },
+  {
+    "name": "Forque",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "4th"
+      }
+    ]
+  },
+  {
+    "name": "Karma Khaos",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "3rd"
+      }
+    ]
+  },
+  {
+    "name": "Lexi Con",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "Runner Up"
+      }
+    ]
+  },
+  {
+    "name": "Zsa Zsa Vanté",
+    "seasons": [
+      {
+        "season": "Season 14",
+        "placement": "Winner"
+      }
+    ]
   }
 ]
