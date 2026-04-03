@@ -285,6 +285,14 @@
       {
         "season": "Season 3",
         "placement": "3/4th"
+      },
+      {
+        "season": "All Stars 1",
+        "placement": "Winner"
+      },
+      {
+        "season": "All Stars 5  3rd/4th",
+        "placement": "—"
       }
     ]
   },
@@ -389,15 +397,6 @@
       {
         "season": "Season 3",
         "placement": "11th"
-      }
-    ]
-  },
-  {
-    "name": "Tiara St. Clare",
-    "seasons": [
-      {
-        "season": "All Stars 1",
-        "placement": "Winner"
       }
     ]
   },
@@ -1215,15 +1214,6 @@
     ]
   },
   {
-    "name": "Tiara St. Claire",
-    "seasons": [
-      {
-        "season": "All Stars 5",
-        "placement": "3rd/4th"
-      }
-    ]
-  },
-  {
     "name": "Salamander",
     "seasons": [
       {
@@ -1301,6 +1291,114 @@
       {
         "season": "Season 11",
         "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Regina Riot",
+    "seasons": [
+      {
+        "season": "Season 12",
+        "placement": "12th Place"
+      }
+    ]
+  },
+  {
+    "name": "Lara",
+    "seasons": [
+      {
+        "season": "Season 12",
+        "placement": "11th Place"
+      }
+    ]
+  },
+  {
+    "name": "Maya Myst",
+    "seasons": [
+      {
+        "season": "Season 12",
+        "placement": "10th Place"
+      }
+    ]
+  },
+  {
+    "name": "Dahlia Drama",
+    "seasons": [
+      {
+        "season": "Season 12",
+        "placement": "9th Place"
+      }
+    ]
+  },
+  {
+    "name": "Saffron Sky",
+    "seasons": [
+      {
+        "season": "Season 12",
+        "placement": "8th Place"
+      }
+    ]
+  },
+  {
+    "name": "Jade",
+    "seasons": [
+      {
+        "season": "Season 12",
+        "placement": "7th Place"
+      }
+    ]
+  },
+  {
+    "name": "Tiana Tinsel",
+    "seasons": [
+      {
+        "season": "Season 12",
+        "placement": "6th Place"
+      }
+    ]
+  },
+  {
+    "name": "Lola Rouge Royale",
+    "seasons": [
+      {
+        "season": "Season 12",
+        "placement": "5th Place"
+      }
+    ]
+  },
+  {
+    "name": "Bliss",
+    "seasons": [
+      {
+        "season": "Season 12",
+        "placement": "3rd/4th Place"
+      }
+    ]
+  },
+  {
+    "name": "Juno",
+    "seasons": [
+      {
+        "season": "Season 12",
+        "placement": "3rd/4th Place"
+      }
+    ]
+  },
+  {
+    "name": "Universe",
+    "seasons": [
+      {
+        "season": "Season 12",
+        "placement": "2nd Place"
+      }
+    ]
+  },
+  {
+    "name": "Sugar Rush",
+    "seasons": [
+      {
+        "season": "Season 12",
+        "placement": "Winner"
       }
     ]
   }
