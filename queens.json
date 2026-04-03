@@ -17,14 +17,14 @@
     "seasons": [
       {
         "season": "Season 1",
-        "placement": "2nd"
+        "placement": "Runner Up"
       },
       {
         "season": "All Stars 1",
         "placement": "5th"
       },
       {
-        "season": "Special Season - JV vs The Universe",
+        "season": "JV vs The Universe",
         "placement": "Winner"
       },
       {
@@ -125,14 +125,14 @@
     "seasons": [
       {
         "season": "Season 2",
-        "placement": "2nd"
+        "placement": "Runner Up"
       },
       {
         "season": "All Stars 1",
         "placement": "4th"
       },
       {
-        "season": "Special Season - JV vs The Universe",
+        "season": "JV vs The Universe",
         "placement": "12th"
       }
     ]
@@ -223,7 +223,7 @@
       },
       {
         "season": "All Stars 1",
-        "placement": "2nd"
+        "placement": "Runner Up"
       },
       {
         "season": "All Stars 3",
@@ -271,7 +271,7 @@
     "seasons": [
       {
         "season": "Season 3",
-        "placement": "2nd"
+        "placement": "Runner Up"
       },
       {
         "season": "All Stars 2",
@@ -309,7 +309,7 @@
       },
       {
         "season": "All Stars 5",
-        "placement": "2nd"
+        "placement": "Runner Up"
       }
     ]
   },
@@ -418,7 +418,7 @@
     "seasons": [
       {
         "season": "Season 4",
-        "placement": "2nd"
+        "placement": "Runner Up"
       },
       {
         "season": "All Stars 2",
@@ -509,7 +509,7 @@
       },
       {
         "season": "All Stars 4",
-        "placement": "2nd"
+        "placement": "Runner Up"
       }
     ]
   },
@@ -522,7 +522,7 @@
       },
       {
         "season": "All Stars 2",
-        "placement": "2nd"
+        "placement": "Runner Up"
       },
       {
         "season": "Special Season - JV vs The Universe",
@@ -548,7 +548,7 @@
     "seasons": [
       {
         "season": "Season 5",
-        "placement": "2/3rd"
+        "placement": "Runner Up"
       },
       {
         "season": "All Stars 4",
@@ -561,7 +561,7 @@
     "seasons": [
       {
         "season": "Season 5",
-        "placement": "2/3rd"
+        "placement": "Runner Up"
       },
       {
         "season": "All Stars 2",
@@ -670,11 +670,11 @@
     "seasons": [
       {
         "season": "Season 6",
-        "placement": "2nd"
+        "placement": "Runner Up"
       },
       {
         "season": "All Stars 3",
-        "placement": "2nd"
+        "placement": "Runner Up"
       }
     ]
   },
@@ -766,8 +766,8 @@
     "name": "Gigi Goode",
     "seasons": [
       {
-        "season": "Special Season - JV vs The Universe",
-        "placement": "2nd"
+        "season": "JV vs The Universe",
+        "placement": "Runner Up"
       }
     ]
   },
@@ -843,7 +843,7 @@
     "seasons": [
       {
         "season": "Season 7",
-        "placement": "2nd"
+        "placement": "Runner Up"
       },
       {
         "season": "All Stars 4",
@@ -949,7 +949,7 @@
     "seasons": [
       {
         "season": "Season 8",
-        "placement": "2nd"
+        "placement": "Runner Up"
       },
       {
         "season": "All Stars 4",
@@ -1047,7 +1047,7 @@
     "seasons": [
       {
         "season": "Season 9",
-        "placement": "2nd"
+        "placement": "Runner Up"
       }
     ]
   },
@@ -1137,7 +1137,7 @@
     "seasons": [
       {
         "season": "Season 10",
-        "placement": "2nd"
+        "placement": "Runner Up"
       }
     ]
   },
@@ -1227,7 +1227,7 @@
     "seasons": [
       {
         "season": "Season 11",
-        "placement": "2nd"
+        "placement": "Runner Up"
       }
     ]
   },
@@ -1389,7 +1389,7 @@
     "seasons": [
       {
         "season": "Season 12",
-        "placement": "2nd Place"
+        "placement": "Runner Up"
       }
     ]
   },
