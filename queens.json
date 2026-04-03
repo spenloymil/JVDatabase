@@ -809,7 +809,7 @@
     "name": "Acacia Forgot",
     "seasons": [
       {
-        "season": "Special Season - JV vs The Universe",
+        "season": "JV vs The Universe",
         "placement": "8th"
       }
     ]
@@ -1142,7 +1142,7 @@
     ]
   },
   {
-    "name": "Ametyst",
+    "name": "Amethyst",
     "seasons": [
       {
         "season": "Season 9",
@@ -1446,6 +1446,123 @@
     "seasons": [
       {
         "season": "Season 12",
+        "placement": "Winner"
+      }
+    ]
+  },
+  {
+    "name": "Orangerina",
+    "seasons": [
+      {
+        "season": "Season 13",
+        "placement": "14th"
+      }
+    ]
+  },
+  {
+    "name": "Gigi Coco",
+    "seasons": [
+      {
+        "season": "Season 13",
+        "placement": "13th"
+      }
+    ]
+  },
+  {
+    "name": "Korea",
+    "seasons": [
+      {
+        "season": "Season 13",
+        "placement": "12th"
+      }
+    ]
+  },
+  {
+    "name": "Gwendelacreme",
+    "seasons": [
+      {
+        "season": "Season 13",
+        "placement": "11th"
+      }
+    ]
+  },
+  {
+    "name": "America Fererra",
+    "seasons": [
+      {
+        "season": "Season 13",
+        "placement": "10th"
+      }
+    ]
+  },
+  {
+    "name": "Silk",
+    "seasons": [
+      {
+        "season": "Season 13",
+        "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Fonda Lux",
+    "seasons": [
+      {
+        "season": "Season 13",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Mickeyakatowa",
+    "seasons": [
+      {
+        "season": "Season 13",
+        "placement": "7th"
+      }
+    ]
+  },
+  {
+    "name": "Dakota K. Fierce",
+    "seasons": [
+      {
+        "season": "Season 13",
+        "placement": "6h"
+      }
+    ]
+  },
+  {
+    "name": "Starbloom",
+    "seasons": [
+      {
+        "season": "Season 13",
+        "placement": "3rd/4th"
+      }
+    ]
+  },
+  {
+    "name": "Alexia Blue",
+    "seasons": [
+      {
+        "season": "Season 13",
+        "placement": "3rd/4th"
+      }
+    ]
+  },
+  {
+    "name": "Bambi",
+    "seasons": [
+      {
+        "season": "Season 13",
+        "placement": "Runner Up"
+      }
+    ]
+  },
+  {
+    "name": "Sapphire",
+    "seasons": [
+      {
+        "season": "Season 13",
         "placement": "Winner"
       }
     ]
