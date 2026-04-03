@@ -1,33 +1,308 @@
 [
   {
-    "name": "Crystal Vega",
-    "full_name": "Crystal Vega",
+    "name": "Plastica",
     "seasons": [
-      {"season": "Season 1", "placement": "Winner"},
-      {"season": "All Stars 1", "placement": "3rd Place"}
+      {
+        "season": "Season 1",
+        "placement": "Winner"
+      }
     ]
   },
   {
-    "name": "Neon Nightshade",
-    "full_name": "Neon Nightshade",
+    "name": "Saturn",
     "seasons": [
-      {"season": "Season 2", "placement": "Runner-Up"},
-      {"season": "Season 5", "placement": "5th Place"}
+      {
+        "season": "Season 1",
+        "placement": "2nd"
+      },
+      {
+        "season": "All Stars 1",
+        "placement": "5th"
+      }
     ]
   },
   {
-    "name": "Velvet Thunderstruck",
-    "full_name": "Velvet Thunderstruck",
+    "name": "Lida La' Rue",
     "seasons": [
-      {"season": "Season 3", "placement": "Winner"}
+      {
+        "season": "Season 1",
+        "placement": "3rd"
+      }
     ]
   },
   {
-    "name": "Duchess Von Glam",
-    "full_name": "Duchess Von Glam",
+    "name": "Viva Queen",
     "seasons": [
-      {"season": "Season 1", "placement": "4th Place"},
-      {"season": "All Stars 2", "placement": "Winner"}
+      {
+        "season": "Season 1",
+        "placement": "4th"
+      },
+      {
+        "season": "All Stars 1",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Kirana",
+    "seasons": [
+      {
+        "season": "Season 1",
+        "placement": "5th"
+      }
+    ]
+  },
+  {
+    "name": "Lifita",
+    "seasons": [
+      {
+        "season": "Season 1",
+        "placement": "6th"
+      },
+      {
+        "season": "All Stars 1",
+        "placement": "7th"
+      }
+    ]
+  },
+  {
+    "name": "Miss Frida B",
+    "seasons": [
+      {
+        "season": "Season 1",
+        "placement": "7th"
+      }
+    ]
+  },
+  {
+    "name": "Mellow",
+    "seasons": [
+      {
+        "season": "Season 1",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Aqua",
+    "seasons": [
+      {
+        "season": "Season 2",
+        "placement": "Winner"
+      }
+    ]
+  },
+  {
+    "name": "Mystic Mirage",
+    "seasons": [
+      {
+        "season": "Season 2",
+        "placement": "2nd"
+      },
+      {
+        "season": "All Stars 1",
+        "placement": "4th"
+      }
+    ]
+  },
+  {
+    "name": "Slowaha Imana",
+    "seasons": [
+      {
+        "season": "Season 2",
+        "placement": "3/4th"
+      },
+      {
+        "season": "All Stars 1",
+        "placement": "6th"
+      }
+    ]
+  },
+  {
+    "name": "Lexina",
+    "seasons": [
+      {
+        "season": "Season 2",
+        "placement": "3/4th"
+      },
+      {
+        "season": "All Stars 1",
+        "placement": "3rd"
+      }
+    ]
+  },
+  {
+    "name": "Miss Niyakatowa",
+    "seasons": [
+      {
+        "season": "Season 2",
+        "placement": "5th"
+      }
+    ]
+  },
+  {
+    "name": "Trisha Trash",
+    "seasons": [
+      {
+        "season": "Season 2",
+        "placement": "6th"
+      }
+    ]
+  },
+  {
+    "name": "Velvet Vex",
+    "seasons": [
+      {
+        "season": "Season 2",
+        "placement": "7th"
+      }
+    ]
+  },
+  {
+    "name": "Duchess",
+    "seasons": [
+      {
+        "season": "Season 2",
+        "placement": "8th"
+      },
+      {
+        "season": "All Stars 1",
+        "placement": "2nd"
+      }
+    ]
+  },
+  {
+    "name": "Koco",
+    "seasons": [
+      {
+        "season": "Season 2",
+        "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Ruby Ray",
+    "seasons": [
+      {
+        "season": "Season 2",
+        "placement": "10th"
+      }
+    ]
+  },
+  {
+    "name": "Adorabl\u00e8",
+    "seasons": [
+      {
+        "season": "Season 3",
+        "placement": "Winner"
+      }
+    ]
+  },
+  {
+    "name": "Sasha Fierce",
+    "seasons": [
+      {
+        "season": "Season 3",
+        "placement": "2nd"
+      }
+    ]
+  },
+  {
+    "name": "Tiana St. Claire",
+    "seasons": [
+      {
+        "season": "Season 3",
+        "placement": "3/4th"
+      }
+    ]
+  },
+  {
+    "name": "Jupiter",
+    "seasons": [
+      {
+        "season": "Season 3",
+        "placement": "3/4th"
+      }
+    ]
+  },
+  {
+    "name": "Honey muffin",
+    "seasons": [
+      {
+        "season": "Season 3",
+        "placement": "5th"
+      }
+    ]
+  },
+  {
+    "name": "ZigZag",
+    "seasons": [
+      {
+        "season": "Season 3",
+        "placement": "6th"
+      },
+      {
+        "season": "All Stars 1",
+        "placement": "10th"
+      }
+    ]
+  },
+  {
+    "name": "Ms. Geek",
+    "seasons": [
+      {
+        "season": "Season 3",
+        "placement": "7th"
+      },
+      {
+        "season": "All Stars 1",
+        "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Lorena",
+    "seasons": [
+      {
+        "season": "Season 3",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Fattie Pattie",
+    "seasons": [
+      {
+        "season": "Season 3",
+        "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Poolina",
+    "seasons": [
+      {
+        "season": "Season 3",
+        "placement": "10th"
+      }
+    ]
+  },
+  {
+    "name": "Cryztal Ballz",
+    "seasons": [
+      {
+        "season": "Season 3",
+        "placement": "11th"
+      }
+    ]
+  },
+  {
+    "name": "Tiara St. Clare",
+    "seasons": [
+      {
+        "season": "All Stars 1",
+        "placement": "Winner"
+      }
     ]
   }
 ]
