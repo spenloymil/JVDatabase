@@ -5,6 +5,10 @@
       {
         "season": "Season 1",
         "placement": "Winner"
+      },
+      {
+        "season": "All Stars 3",
+        "placement": "3rd"
       }
     ]
   },
@@ -18,6 +22,14 @@
       {
         "season": "All Stars 1",
         "placement": "5th"
+      },
+      {
+        "season": "Special Season - JV vs The Universe",
+        "placement": "Winner"
+      },
+      {
+        "season": "All Stars 5",
+        "placement": "8-5th"
       }
     ]
   },
@@ -27,6 +39,10 @@
       {
         "season": "Season 1",
         "placement": "3rd"
+      },
+      {
+        "season": "All Stars 2",
+        "placement": "4th"
       }
     ]
   },
@@ -40,6 +56,10 @@
       {
         "season": "All Stars 1",
         "placement": "8th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "18-11th"
       }
     ]
   },
@@ -71,6 +91,10 @@
       {
         "season": "Season 1",
         "placement": "7th"
+      },
+      {
+        "season": "All Stars 2",
+        "placement": "Winner"
       }
     ]
   },
@@ -89,6 +113,10 @@
       {
         "season": "Season 2",
         "placement": "Winner"
+      },
+      {
+        "season": "All Stars 5",
+        "placement": "Winner"
       }
     ]
   },
@@ -102,6 +130,10 @@
       {
         "season": "All Stars 1",
         "placement": "4th"
+      },
+      {
+        "season": "Special Season - JV vs The Universe",
+        "placement": "12th"
       }
     ]
   },
@@ -115,6 +147,14 @@
       {
         "season": "All Stars 1",
         "placement": "6th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "Winner"
+      },
+      {
+        "season": "All Stars 5",
+        "placement": "8-5th"
       }
     ]
   },
@@ -128,6 +168,10 @@
       {
         "season": "All Stars 1",
         "placement": "3rd"
+      },
+      {
+        "season": "All Stars 3",
+        "placement": "10th"
       }
     ]
   },
@@ -137,6 +181,10 @@
       {
         "season": "Season 2",
         "placement": "5th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "3/4th"
       }
     ]
   },
@@ -146,6 +194,10 @@
       {
         "season": "Season 2",
         "placement": "6th"
+      },
+      {
+        "season": "All Stars 3",
+        "placement": "8th"
       }
     ]
   },
@@ -155,6 +207,10 @@
       {
         "season": "Season 2",
         "placement": "7th"
+      },
+      {
+        "season": "All Stars 2",
+        "placement": "11th"
       }
     ]
   },
@@ -168,15 +224,23 @@
       {
         "season": "All Stars 1",
         "placement": "2nd"
+      },
+      {
+        "season": "All Stars 3",
+        "placement": "4th"
       }
     ]
   },
   {
-    "name": "Koco",
+    "name": "Koko",
     "seasons": [
       {
         "season": "Season 2",
         "placement": "9th"
+      },
+      {
+        "season": "All Stars 2",
+        "placement": "6th"
       }
     ]
   },
@@ -186,11 +250,15 @@
       {
         "season": "Season 2",
         "placement": "10th"
+      },
+      {
+        "season": "All Stars 3",
+        "placement": "5th"
       }
     ]
   },
   {
-    "name": "Adorabl\u00e8",
+    "name": "Adorablè",
     "seasons": [
       {
         "season": "Season 3",
@@ -204,6 +272,10 @@
       {
         "season": "Season 3",
         "placement": "2nd"
+      },
+      {
+        "season": "All Stars 2",
+        "placement": "10th"
       }
     ]
   },
@@ -222,15 +294,27 @@
       {
         "season": "Season 3",
         "placement": "3/4th"
+      },
+      {
+        "season": "All Stars 3",
+        "placement": "Winner"
+      },
+      {
+        "season": "All Stars 5",
+        "placement": "2nd"
       }
     ]
   },
   {
-    "name": "Honey muffin",
+    "name": "Honey Muffin",
     "seasons": [
       {
         "season": "Season 3",
         "placement": "5th"
+      },
+      {
+        "season": "All Stars 2",
+        "placement": "8th"
       }
     ]
   },
@@ -244,6 +328,10 @@
       {
         "season": "All Stars 1",
         "placement": "10th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "5-8th"
       }
     ]
   },
@@ -257,6 +345,10 @@
       {
         "season": "All Stars 1",
         "placement": "9th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "18-11th"
       }
     ]
   },
@@ -270,11 +362,15 @@
     ]
   },
   {
-    "name": "Fattie Pattie",
+    "name": "Fattie Patti",
     "seasons": [
       {
         "season": "Season 3",
         "placement": "9th"
+      },
+      {
+        "season": "All Stars 2",
+        "placement": "12th"
       }
     ]
   },
@@ -302,6 +398,909 @@
       {
         "season": "All Stars 1",
         "placement": "Winner"
+      }
+    ]
+  },
+  {
+    "name": "Crystal V. Couture",
+    "seasons": [
+      {
+        "season": "Season 4",
+        "placement": "Winner"
+      },
+      {
+        "season": "All Stars 5",
+        "placement": "3rd/4th"
+      }
+    ]
+  },
+  {
+    "name": "Jabba The Slut",
+    "seasons": [
+      {
+        "season": "Season 4",
+        "placement": "2nd"
+      },
+      {
+        "season": "All Stars 2",
+        "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Ophelia Balls",
+    "seasons": [
+      {
+        "season": "Season 4",
+        "placement": "3rd"
+      }
+    ]
+  },
+  {
+    "name": "Echo Baby",
+    "seasons": [
+      {
+        "season": "Season 4",
+        "placement": "4th"
+      },
+      {
+        "season": "All Stars 3",
+        "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Zoella",
+    "seasons": [
+      {
+        "season": "Season 4",
+        "placement": "5/6th"
+      },
+      {
+        "season": "All Stars 2",
+        "placement": "7th"
+      }
+    ]
+  },
+  {
+    "name": "Camilla VanTassle",
+    "seasons": [
+      {
+        "season": "Season 4",
+        "placement": "5/6th"
+      },
+      {
+        "season": "All Stars 3",
+        "placement": "12th"
+      }
+    ]
+  },
+  {
+    "name": "Sue Flay",
+    "seasons": [
+      {
+        "season": "Season 4",
+        "placement": "7th"
+      },
+      {
+        "season": "Special Season - JV vs The Universe",
+        "placement": "7th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "18-11th"
+      }
+    ]
+  },
+  {
+    "name": "Kandy La'Rue",
+    "seasons": [
+      {
+        "season": "Season 4",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Kitty Sinister",
+    "seasons": [
+      {
+        "season": "Season 4",
+        "placement": "9th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "2nd"
+      }
+    ]
+  },
+  {
+    "name": "Sporky La'Spork",
+    "seasons": [
+      {
+        "season": "Season 4",
+        "placement": "10th"
+      },
+      {
+        "season": "All Stars 2",
+        "placement": "2nd"
+      },
+      {
+        "season": "Special Season - JV vs The Universe",
+        "placement": "3rd"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "5-8th"
+      }
+    ]
+  },
+  {
+    "name": "Serpenta",
+    "seasons": [
+      {
+        "season": "Season 5",
+        "placement": "Winner"
+      }
+    ]
+  },
+  {
+    "name": "XoXo",
+    "seasons": [
+      {
+        "season": "Season 5",
+        "placement": "2/3rd"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "5-8th"
+      }
+    ]
+  },
+  {
+    "name": "Miss Mable",
+    "seasons": [
+      {
+        "season": "Season 5",
+        "placement": "2/3rd"
+      },
+      {
+        "season": "All Stars 2",
+        "placement": "3rd"
+      }
+    ]
+  },
+  {
+    "name": "Molloe",
+    "seasons": [
+      {
+        "season": "Season 5",
+        "placement": "4th"
+      },
+      {
+        "season": "Special Season - JV vs The Universe",
+        "placement": "4th"
+      }
+    ]
+  },
+  {
+    "name": "Shiny Pie",
+    "seasons": [
+      {
+        "season": "Season 5",
+        "placement": "5th"
+      },
+      {
+        "season": "All Stars 3",
+        "placement": "7th"
+      }
+    ]
+  },
+  {
+    "name": "Marvelo Queen Jr.",
+    "seasons": [
+      {
+        "season": "Season 5",
+        "placement": "6th"
+      },
+      {
+        "season": "All Stars 2",
+        "placement": "5th"
+      }
+    ]
+  },
+  {
+    "name": "Nikiana",
+    "seasons": [
+      {
+        "season": "Season 5",
+        "placement": "7th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "5-8th"
+      }
+    ]
+  },
+  {
+    "name": "Koin",
+    "seasons": [
+      {
+        "season": "Season 5",
+        "placement": "8th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "18-11th"
+      }
+    ]
+  },
+  {
+    "name": "Kaasi",
+    "seasons": [
+      {
+        "season": "Season 5",
+        "placement": "9th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "18-11th"
+      }
+    ]
+  },
+  {
+    "name": "Coala",
+    "seasons": [
+      {
+        "season": "Season 5",
+        "placement": "10th"
+      }
+    ]
+  },
+  {
+    "name": "Tangy",
+    "seasons": [
+      {
+        "season": "Season 6",
+        "placement": "Winner"
+      }
+    ]
+  },
+  {
+    "name": "Davé",
+    "seasons": [
+      {
+        "season": "Season 6",
+        "placement": "2nd"
+      },
+      {
+        "season": "All Stars 3",
+        "placement": "2nd"
+      }
+    ]
+  },
+  {
+    "name": "Lola Lush",
+    "seasons": [
+      {
+        "season": "Season 6",
+        "placement": "3rd"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Gemma Petals",
+    "seasons": [
+      {
+        "season": "Season 6",
+        "placement": "4th"
+      }
+    ]
+  },
+  {
+    "name": "Raven Synn",
+    "seasons": [
+      {
+        "season": "Season 6",
+        "placement": "5th"
+      }
+    ]
+  },
+  {
+    "name": "Laya V. Couture",
+    "seasons": [
+      {
+        "season": "Season 6",
+        "placement": "6th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "10th"
+      }
+    ]
+  },
+  {
+    "name": "Vannessa Vonté",
+    "seasons": [
+      {
+        "season": "Season 6",
+        "placement": "7th"
+      },
+      {
+        "season": "All Stars 3",
+        "placement": "6th"
+      }
+    ]
+  },
+  {
+    "name": "Snookie Sinclair",
+    "seasons": [
+      {
+        "season": "Season 6",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Kikiana",
+    "seasons": [
+      {
+        "season": "Season 6",
+        "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Velvet Hiss",
+    "seasons": [
+      {
+        "season": "Season 6",
+        "placement": "10th"
+      }
+    ]
+  },
+  {
+    "name": "Gigi Goode",
+    "seasons": [
+      {
+        "season": "Special Season - JV vs The Universe",
+        "placement": "2nd"
+      }
+    ]
+  },
+  {
+    "name": "Morphine Love Dion",
+    "seasons": [
+      {
+        "season": "Special Season - JV vs The Universe",
+        "placement": "5th"
+      }
+    ]
+  },
+  {
+    "name": "Chai T Grande",
+    "seasons": [
+      {
+        "season": "Special Season - JV vs The Universe",
+        "placement": "6th"
+      }
+    ]
+  },
+  {
+    "name": "Acacia Forgot",
+    "seasons": [
+      {
+        "season": "Special Season - JV vs The Universe",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Coke Lipa",
+    "seasons": [
+      {
+        "season": "Special Season - JV vs The Universe",
+        "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Marina Summers",
+    "seasons": [
+      {
+        "season": "Special Season - JV vs The Universe",
+        "placement": "10th"
+      }
+    ]
+  },
+  {
+    "name": "Mattel Doll",
+    "seasons": [
+      {
+        "season": "Special Season - JV vs The Universe",
+        "placement": "11th"
+      }
+    ]
+  },
+  {
+    "name": "Kiss Kiss X",
+    "seasons": [
+      {
+        "season": "Season 7",
+        "placement": "Winner"
+      },
+      {
+        "season": "All Stars 5",
+        "placement": "8-5th"
+      }
+    ]
+  },
+  {
+    "name": "Trixie Grindr",
+    "seasons": [
+      {
+        "season": "Season 7",
+        "placement": "2nd"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "18-11th"
+      }
+    ]
+  },
+  {
+    "name": "Lovelace",
+    "seasons": [
+      {
+        "season": "Season 7",
+        "placement": "3rd"
+      }
+    ]
+  },
+  {
+    "name": "Deb U'Taunt",
+    "seasons": [
+      {
+        "season": "Season 7",
+        "placement": "4th"
+      }
+    ]
+  },
+  {
+    "name": "Zahira D",
+    "seasons": [
+      {
+        "season": "Season 7",
+        "placement": "5th"
+      }
+    ]
+  },
+  {
+    "name": "Dior Valentine",
+    "seasons": [
+      {
+        "season": "Season 7",
+        "placement": "6th"
+      },
+      {
+        "season": "All Stars 3",
+        "placement": "11th"
+      }
+    ]
+  },
+  {
+    "name": "Aura Crystál",
+    "seasons": [
+      {
+        "season": "Season 7",
+        "placement": "7th"
+      }
+    ]
+  },
+  {
+    "name": "Lettuce",
+    "seasons": [
+      {
+        "season": "Season 7",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Sir. Vin Luxe",
+    "seasons": [
+      {
+        "season": "Season 7",
+        "placement": "9th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "18-11th"
+      }
+    ]
+  },
+  {
+    "name": "Sia Later",
+    "seasons": [
+      {
+        "season": "Season 7",
+        "placement": "10th"
+      }
+    ]
+  },
+  {
+    "name": "Gigi Fuego",
+    "seasons": [
+      {
+        "season": "Season 8",
+        "placement": "Winner"
+      },
+      {
+        "season": "All Stars 5",
+        "placement": "8-5th"
+      }
+    ]
+  },
+  {
+    "name": "Lana Del Slay",
+    "seasons": [
+      {
+        "season": "Season 8",
+        "placement": "2nd"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "3/4th"
+      }
+    ]
+  },
+  {
+    "name": "Liva Luxe",
+    "seasons": [
+      {
+        "season": "Season 8",
+        "placement": "3/4th"
+      }
+    ]
+  },
+  {
+    "name": "Mariah Scary",
+    "seasons": [
+      {
+        "season": "Season 8",
+        "placement": "3/4th"
+      }
+    ]
+  },
+  {
+    "name": "Mixy Mallow",
+    "seasons": [
+      {
+        "season": "Season 8",
+        "placement": "5th"
+      }
+    ]
+  },
+  {
+    "name": "Dolly Lolly",
+    "seasons": [
+      {
+        "season": "Season 8",
+        "placement": "6th"
+      }
+    ]
+  },
+  {
+    "name": "Miss Snakeo",
+    "seasons": [
+      {
+        "season": "Season 8",
+        "placement": "7th"
+      }
+    ]
+  },
+  {
+    "name": "Nightshades",
+    "seasons": [
+      {
+        "season": "Season 8",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Trish Tush",
+    "seasons": [
+      {
+        "season": "Season 8",
+        "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Noelle",
+    "seasons": [
+      {
+        "season": "Season 8",
+        "placement": "10th"
+      },
+      {
+        "season": "All Stars 4",
+        "placement": "18-11th"
+      }
+    ]
+  },
+  {
+    "name": "Milky Way",
+    "seasons": [
+      {
+        "season": "Season 9",
+        "placement": "Winner"
+      }
+    ]
+  },
+  {
+    "name": "Lady Marmalade",
+    "seasons": [
+      {
+        "season": "Season 9",
+        "placement": "2nd"
+      }
+    ]
+  },
+  {
+    "name": "Vivian Fox",
+    "seasons": [
+      {
+        "season": "Season 9",
+        "placement": "3rd"
+      }
+    ]
+  },
+  {
+    "name": "Miss Adora",
+    "seasons": [
+      {
+        "season": "Season 9",
+        "placement": "4th"
+      }
+    ]
+  },
+  {
+    "name": "Hazel Nutt",
+    "seasons": [
+      {
+        "season": "Season 9",
+        "placement": "5th"
+      }
+    ]
+  },
+  {
+    "name": "Rococo Jazz",
+    "seasons": [
+      {
+        "season": "Season 9",
+        "placement": "6th"
+      }
+    ]
+  },
+  {
+    "name": "DeVayn",
+    "seasons": [
+      {
+        "season": "Season 9",
+        "placement": "7th"
+      }
+    ]
+  },
+  {
+    "name": "Joye Ryde",
+    "seasons": [
+      {
+        "season": "Season 9",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Ametyst",
+    "seasons": [
+      {
+        "season": "Season 9",
+        "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Vall Canno",
+    "seasons": [
+      {
+        "season": "Season 9",
+        "placement": "10th"
+      }
+    ]
+  },
+  {
+    "name": "Dua Licious",
+    "seasons": [
+      {
+        "season": "Season 10",
+        "placement": "Winner"
+      }
+    ]
+  },
+  {
+    "name": "Bo Deysious",
+    "seasons": [
+      {
+        "season": "Season 10",
+        "placement": "2nd"
+      }
+    ]
+  },
+  {
+    "name": "Miss Vanderlush",
+    "seasons": [
+      {
+        "season": "Season 10",
+        "placement": "3rd"
+      }
+    ]
+  },
+  {
+    "name": "Vanta Void",
+    "seasons": [
+      {
+        "season": "Season 10",
+        "placement": "4th"
+      }
+    ]
+  },
+  {
+    "name": "Dagger Doll",
+    "seasons": [
+      {
+        "season": "Season 10",
+        "placement": "5th"
+      }
+    ]
+  },
+  {
+    "name": "Alison Wonder",
+    "seasons": [
+      {
+        "season": "Season 10",
+        "placement": "6th"
+      }
+    ]
+  },
+  {
+    "name": "Minix Halo",
+    "seasons": [
+      {
+        "season": "Season 10",
+        "placement": "7th"
+      }
+    ]
+  },
+  {
+    "name": "Tina Takeout",
+    "seasons": [
+      {
+        "season": "Season 10",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Lavi Luxx",
+    "seasons": [
+      {
+        "season": "Season 10",
+        "placement": "9th"
+      }
+    ]
+  },
+  {
+    "name": "Jenna Rator",
+    "seasons": [
+      {
+        "season": "Season 10",
+        "placement": "10th"
+      }
+    ]
+  },
+  {
+    "name": "Tiara St. Claire",
+    "seasons": [
+      {
+        "season": "All Stars 5",
+        "placement": "3rd/4th"
+      }
+    ]
+  },
+  {
+    "name": "Salamander",
+    "seasons": [
+      {
+        "season": "Season 11",
+        "placement": "Winner"
+      }
+    ]
+  },
+  {
+    "name": "Kitika",
+    "seasons": [
+      {
+        "season": "Season 11",
+        "placement": "2nd"
+      }
+    ]
+  },
+  {
+    "name": "Mercury",
+    "seasons": [
+      {
+        "season": "Season 11",
+        "placement": "3rd"
+      }
+    ]
+  },
+  {
+    "name": "Blowa Me!",
+    "seasons": [
+      {
+        "season": "Season 11",
+        "placement": "4th"
+      }
+    ]
+  },
+  {
+    "name": "HerShe",
+    "seasons": [
+      {
+        "season": "Season 11",
+        "placement": "5th"
+      }
+    ]
+  },
+  {
+    "name": "Eleanour V. Couture",
+    "seasons": [
+      {
+        "season": "Season 11",
+        "placement": "6th"
+      }
+    ]
+  },
+  {
+    "name": "Honey Harlot",
+    "seasons": [
+      {
+        "season": "Season 11",
+        "placement": "7th"
+      }
+    ]
+  },
+  {
+    "name": "Queen Tia",
+    "seasons": [
+      {
+        "season": "Season 11",
+        "placement": "8th"
+      }
+    ]
+  },
+  {
+    "name": "Miss Mayhem",
+    "seasons": [
+      {
+        "season": "Season 11",
+        "placement": "9th"
       }
     ]
   }
