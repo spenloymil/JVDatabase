@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Fantasy Drag Race · Queen Database</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:         #edfcf2;
+    --bg2:        #d8f7e4;
+    --surface:    #ffffff;
+    --surface2:   #f0faf3;
+    --border:     #b6eccc;
+    --border2:    #7dd9a8;
+    --mint:       #2dbe70;
+    --mint-dark:  #1a9454;
+    --lime:       #7ecb3f;
+    --lime-light: #c8f07a;
+    --teal:       #0fa88a;
+    --sage:       #5b9e72;
+    --gold:       #e8a020;
+    --gold-bg:    rgba(232,160,32,0.10);
+    --gold-bdr:   rgba(232,160,32,0.45);
+    --second-bg:  rgba(125,217,168,0.20);
+    --second-bdr: #3dbb84;
+    --low-bg:     rgba(255,100,80,0.08);
+    --low-bdr:    #e55a42;
+    --low-text:   #c0402c;
+    --text:       #0f2e1c;
+    --text2:      #2c5940;
+    --muted:      #5d8a6e;
+    --faint:      #c2e8ce;
+    --shadow-sm:  0 2px 8px rgba(30,100,60,0.08);
+    --shadow-md:  0 6px 24px rgba(30,100,60,0.12);
+    --shadow-lg:  0 16px 48px rgba(30,100,60,0.16);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 50% at 10% 0%,   rgba(126,203,63,0.20) 0%, transparent 55%),
+      radial-gradient(ellipse 60% 40% at 90% 100%,  rgba(45,190,112,0.15) 0%, transparent 55%),
+      radial-gradient(ellipse 50% 60% at 50% 40%,   rgba(15,168,138,0.07) 0%, transparent 65%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(45,190,112,0.18) 1px, transparent 1px);
+    background-size: 28px 28px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.45;
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 1.5rem 6rem;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    text-align: center;
+    padding: 3.5rem 1rem 2.8rem;
+  }
+  .hero-eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--mint);
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+    opacity: 0;
+    animation: fadeUp 0.5s 0.1s forwards;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.8rem, 8vw, 5.2rem);
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 0.6rem;
+    opacity: 0;
+    animation: fadeUp 0.5s 0.2s forwards;
+    position: relative;
+    display: inline-block;
+  }
+  .hero-title::after {
+    content: '';
+    position: absolute;
+    bottom: -6px; left: 5%; right: 5%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--lime), var(--mint), var(--teal));
+    border-radius: 2px;
+  }
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1rem, 2.5vw, 1.35rem);
+    color: var(--muted);
+    font-weight: 400;
+    margin-top: 1.1rem;
+    margin-bottom: 2.2rem;
+    opacity: 0;
+    animation: fadeUp 0.5s 0.3s forwards;
+  }
+  .hero-rule {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0 auto 2.2rem;
+    max-width: 280px;
+    opacity: 0;
+    animation: fadeUp 0.5s 0.35s forwards;
+  }
+  .hero-rule::before, .hero-rule::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border2));
+  }
+  .hero-rule::after { background: linear-gradient(90deg, var(--border2), transparent); }
+  .hero-rule span { color: var(--mint); font-size: 1rem; }
+
+  /* ── STATS ── */
+  .stats-bar {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.8rem;
+    opacity: 0;
+    animation: fadeUp 0.5s 0.4s forwards;
+  }
+  .stat-pill {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    padding: 0.38rem 1rem;
+    font-size: 0.78rem;
+    color: var(--muted);
+    box-shadow: var(--shadow-sm);
+  }
+  .stat-pill strong { color: var(--mint-dark); font-weight: 600; }
+
+  /* ── SEARCH ── */
+  .search-wrap {
+    position: relative;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeUp 0.5s 0.45s forwards;
+  }
+  .search-icon {
+    position: absolute;
+    left: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    font-size: 1.05rem;
+    pointer-events: none;
+  }
+  #searchInput {
+    width: 100%;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    padding: 0.9rem 1rem 0.9rem 2.8rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: var(--shadow-sm);
+  }
+  #searchInput::placeholder { color: var(--muted); }
+  #searchInput:focus {
+    border-color: var(--mint);
+    box-shadow: 0 0 0 4px rgba(45,190,112,0.12), var(--shadow-sm);
+  }
+
+  .results-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.9rem;
+    font-weight: 500;
+  }
+
+  /* ── QUEEN CARDS ── */
+  .queens-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 390px), 1fr));
+    gap: 1rem;
+  }
+  .queen-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 1.6rem 1.8rem 1.3rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    animation: cardIn 0.35s ease both;
+  }
+  .queen-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--border2);
+  }
+  .queen-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--lime), var(--mint), var(--teal));
+  }
+  .queen-card::after {
+    content: '';
+    position: absolute;
+    top: -30px; right: -30px;
+    width: 100px; height: 100px;
+    background: radial-gradient(circle, rgba(126,203,63,0.10) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .queen-header { margin-bottom: 1rem; }
+  .queen-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: 0.3rem;
+  }
+  .queen-meta { display: flex; gap: 0.45rem; flex-wrap: wrap; }
+  .meta-chip {
+    font-size: 0.7rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 0.18rem 0.6rem;
+    font-weight: 500;
+  }
+  .meta-chip.wins { color: var(--gold); border-color: var(--gold-bdr); background: var(--gold-bg); }
+
+  .seasons-list { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 1rem; }
+  .season-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.85rem;
+    border-radius: 9px;
+    background: var(--surface2);
+    border-left: 3px solid var(--border2);
+    transition: background 0.15s;
+  }
+  .season-row:hover { background: var(--bg2); }
+  .season-row.p-winner { border-left-color: var(--gold);       background: var(--gold-bg); }
+  .season-row.p-second { border-left-color: var(--second-bdr); background: var(--second-bg); }
+  .season-row.p-low    { border-left-color: var(--low-bdr);    background: var(--low-bg); }
+  .season-name { font-size: 0.88rem; color: var(--text2); font-weight: 500; }
+  .placement-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    padding: 0.18rem 0.65rem;
+    border-radius: 20px;
+    background: var(--faint);
+    color: var(--sage);
+    white-space: nowrap;
+  }
+  .p-winner .placement-badge { background: var(--gold-bg);   color: var(--gold);      border: 1px solid var(--gold-bdr); }
+  .p-second .placement-badge { background: var(--second-bg); color: var(--mint-dark); border: 1px solid var(--second-bdr); }
+  .p-low    .placement-badge { background: var(--low-bg);    color: var(--low-text);  border: 1px solid var(--low-bdr); }
+
+  .card-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--faint);
+  }
+  .btn-edit-card {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.3rem 0.85rem;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+  }
+  .btn-edit-card:hover {
+    border-color: var(--mint);
+    color: var(--mint-dark);
+    background: rgba(45,190,112,0.07);
+  }
+
+  /* ── BROWSE GRID ── */
+  .browse-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+    gap: 0.7rem;
+  }
+  .browse-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    padding: 1rem 1.1rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    animation: cardIn 0.35s ease both;
+  }
+  .browse-card:hover {
+    border-color: var(--mint);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  .bc-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+    line-height: 1.2;
+    transition: color 0.15s;
+  }
+  .browse-card:hover .bc-name { color: var(--mint-dark); }
+  .bc-stat { font-size: 0.7rem; color: var(--muted); }
+
+  /* ── EMPTY / LOADING ── */
+  .empty {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--muted);
+  }
+  .empty-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+  .empty p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.2rem; }
+  .loading { text-align: center; padding: 3rem; color: var(--muted); font-size: 0.9rem; }
+
+  /* ── FAB ── */
+  #adminToggle {
+    position: fixed;
+    bottom: 2rem; right: 2rem;
+    z-index: 100;
+    background: linear-gradient(135deg, var(--mint), var(--teal));
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 0.78rem 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(45,190,112,0.40);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  #adminToggle:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(45,190,112,0.50); }
+
+  /* ── MODAL ── */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10,40,20,0.45);
+    backdrop-filter: blur(6px);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+  }
+  .modal-overlay.open { opacity: 1; pointer-events: all; }
+  .modal {
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-radius: 22px;
+    padding: 2.2rem 2.4rem;
+    width: 100%;
+    max-width: 530px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: var(--shadow-lg);
+    transform: translateY(18px) scale(0.97);
+    transition: transform 0.25s;
+  }
+  .modal-overlay.open .modal { transform: translateY(0) scale(1); }
+  .modal::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--lime), var(--mint), var(--teal));
+    border-radius: 22px 22px 0 0;
+  }
+  .modal-close {
+    position: absolute;
+    top: 1.1rem; right: 1.3rem;
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: color 0.15s;
+    line-height: 1;
+  }
+  .modal-close:hover { color: var(--text); }
+  .modal h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+  }
+  .modal-sub {
+    color: var(--muted);
+    font-size: 0.82rem;
+    margin-bottom: 1.8rem;
+  }
+
+  #lockScreen, #addScreen, #editScreen { display: none; }
+  #lockScreen.active, #addScreen.active, #editScreen.active { display: block; }
+
+  .field-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    display: block;
+  }
+  .field-input {
+    width: 100%;
+    background: var(--surface2);
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    padding: 0.68rem 0.95rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    margin-bottom: 1.1rem;
+  }
+  .field-input:focus {
+    border-color: var(--mint);
+    box-shadow: 0 0 0 3px rgba(45,190,112,0.12);
+    background: #fff;
+  }
+
+  #seasonsBuilder, #editSeasonsBuilder { margin-bottom: 0.8rem; }
+
+  .season-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+  }
+  .season-entry .field-input { margin-bottom: 0; }
+  .btn-remove-season {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    border-radius: 8px;
+    width: 34px; height: 34px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .btn-remove-season:hover { border-color: var(--low-bdr); color: var(--low-text); background: var(--low-bg); }
+
+  .btn-add-season {
+    background: rgba(45,190,112,0.07);
+    border: 1px dashed var(--border2);
+    color: var(--mint-dark);
+    border-radius: 9px;
+    width: 100%;
+    padding: 0.55rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    margin-bottom: 1.3rem;
+  }
+  .btn-add-season:hover { background: rgba(45,190,112,0.13); border-color: var(--mint); }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--mint), var(--teal));
+    border: none;
+    border-radius: 11px;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.93rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 0.78rem 2rem;
+    cursor: pointer;
+    width: 100%;
+    transition: opacity 0.2s, transform 0.15s;
+    box-shadow: 0 4px 16px rgba(45,190,112,0.30);
+  }
+  .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+
+  .btn-secondary {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 500;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.6rem;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .btn-secondary:hover { border-color: var(--border2); color: var(--text); }
+
+  .btn-danger {
+    background: var(--low-bg);
+    border: 1px solid var(--low-bdr);
+    border-radius: 11px;
+    color: var(--low-text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1.2rem;
+    transition: background 0.15s, box-shadow 0.15s;
+    letter-spacing: 0.03em;
+  }
+  .btn-danger:hover { background: rgba(255,100,80,0.14); box-shadow: 0 2px 10px rgba(229,90,66,0.2); }
+
+  .divider { border: none; border-top: 1px solid var(--faint); margin: 1.4rem 0; }
+
+  .error-msg {
+    font-size: 0.82rem;
+    color: var(--low-text);
+    margin-top: -0.8rem;
+    margin-bottom: 0.9rem;
+    padding-left: 0.2rem;
+  }
+
+  .export-wrap {
+    margin-top: 1.6rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--faint);
+    text-align: center;
+  }
+  .export-wrap p { font-size: 0.78rem; color: var(--muted); margin-bottom: 0.8rem; line-height: 1.55; }
+
+  code {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+    font-size: 0.85em;
+  }
+
+  /* ── TOAST ── */
+  .toast {
+    position: fixed;
+    bottom: 6.5rem; left: 50%;
+    transform: translateX(-50%) translateY(16px);
+    background: var(--text);
+    color: #fff;
+    border-radius: 30px;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.86rem;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 400;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes cardIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .queen-card:nth-child(1), .browse-card:nth-child(1) { animation-delay: 0.04s; }
+  .queen-card:nth-child(2), .browse-card:nth-child(2) { animation-delay: 0.08s; }
+  .queen-card:nth-child(3), .browse-card:nth-child(3) { animation-delay: 0.12s; }
+  .queen-card:nth-child(4), .browse-card:nth-child(4) { animation-delay: 0.15s; }
+  .queen-card:nth-child(n+5), .browse-card:nth-child(n+5) { animation-delay: 0.18s; }
+
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-eyebrow">✦ The Legendary &nbsp;·&nbsp; The Ferocious &nbsp;·&nbsp; The Iconic ✦</div>
+    <h1 class="hero-title">Fantasy Drag Race</h1>
+    <p class="hero-sub">Queen Database &amp; Season Records</p>
+    <div class="hero-rule"><span>♛</span></div>
+  </div>
+
+  <div class="stats-bar" id="statsBar"></div>
+
+  <div class="search-wrap">
+    <span class="search-icon">⌕</span>
+    <input type="text" id="searchInput" placeholder="Search queens by name…" autocomplete="off" spellcheck="false"/>
+  </div>
+
+  <div class="results-label" id="resultsLabel"></div>
+  <div id="queensContainer"><div class="loading">Loading queens…</div></div>
+</div>
+
+<button id="adminToggle" onclick="openAdmin('add')">✦ Add Queen</button>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modalOverlay" onclick="overlayClick(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">×</button>
+
+    <!-- Lock -->
+    <div id="lockScreen">
+      <h2>Enter the Werk Room</h2>
+      <p class="modal-sub">This area is for the production team only.</p>
+      <label class="field-label" for="codeInput">Secret Code</label>
+      <input class="field-input" type="password" id="codeInput" placeholder="••••••" onkeydown="if(event.key==='Enter')checkCode()"/>
+      <div class="error-msg" id="codeError"></div>
+      <button class="btn-primary" onclick="checkCode()">Unlock ✦</button>
+    </div>
+
+    <!-- Add -->
+    <div id="addScreen">
+      <h2>New Queen</h2>
+      <p class="modal-sub">Add a queen and their full season history.</p>
+      <label class="field-label" for="queenName">Full Drag Name</label>
+      <input class="field-input" type="text" id="queenName" placeholder="e.g. Crystal Vega Deluxe"/>
+      <label class="field-label">Seasons Competed</label>
+      <div id="seasonsBuilder"></div>
+      <button class="btn-add-season" onclick="addSeasonRow('seasonsBuilder')">+ Add Season</button>
+      <button class="btn-primary" onclick="saveQueen()">Save Queen 👑</button>
+      <button class="btn-secondary" onclick="lockAdmin()">🔒 Lock &amp; Close</button>
+      <div class="export-wrap">
+        <p>After adding queens, download the updated <code>queens.json</code> and commit it to GitHub.</p>
+        <button class="btn-secondary" onclick="exportJSON()">⬇ Download queens.json</button>
+      </div>
+    </div>
+
+    <!-- Edit -->
+    <div id="editScreen">
+      <h2>Edit Queen</h2>
+      <p class="modal-sub">Update this queen's details or remove them from the database.</p>
+      <label class="field-label" for="editQueenName">Full Drag Name</label>
+      <input class="field-input" type="text" id="editQueenName"/>
+      <label class="field-label">Seasons Competed</label>
+      <div id="editSeasonsBuilder"></div>
+      <button class="btn-add-season" onclick="addSeasonRow('editSeasonsBuilder')">+ Add Season</button>
+      <button class="btn-primary" onclick="saveEdit()">Save Changes ✓</button>
+      <button class="btn-secondary" onclick="showAddScreen()">← Back</button>
+      <hr class="divider"/>
+      <button class="btn-danger" onclick="confirmDelete()">🗑 Delete This Queen</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const SECRET    = "SPORKY";
+const JSON_FILE = "queens.json";
+
+let QUEENS        = [];
+let authenticated = false;
+let editIndex     = -1;
+let pendingAction = "add";
+let rowId         = 0;
+
+async function loadQueens() {
+  try {
+    const res = await fetch(JSON_FILE + "?v=" + Date.now());
+    if (!res.ok) throw new Error();
+    QUEENS = await res.json();
+  } catch {
+    QUEENS = [];
+  }
+  render();
+}
+
+function placementClass(p) {
+  const l = p.toLowerCase();
+  if (l.includes("winner") || l.includes("1st"))                         return "p-winner";
+  if (l.includes("runner") || l.includes("2nd"))                         return "p-second";
+  if (l.includes("elim") || l.includes("bottom") || l.includes("out"))  return "p-low";
+  return "";
+}
+
+function winCount(q) {
+  return q.seasons.filter(s => placementClass(s.placement) === "p-winner").length;
+}
+
+function showToast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 2800);
+}
+
+function render() {
+  const query     = document.getElementById("searchInput").value.trim().toLowerCase();
+  const container = document.getElementById("queensContainer");
+  const label     = document.getElementById("resultsLabel");
+  const statsBar  = document.getElementById("statsBar");
+
+  const totalApps = QUEENS.reduce((a, q) => a + q.seasons.length, 0);
+  const winners   = QUEENS.filter(q => q.seasons.some(s => placementClass(s.placement) === "p-winner")).length;
+  statsBar.innerHTML = `
+    <div class="stat-pill"><strong>${QUEENS.length}</strong> Queens</div>
+    <div class="stat-pill"><strong>${totalApps}</strong> Appearances</div>
+    <div class="stat-pill"><strong>${winners}</strong> Winners</div>`;
+
+  if (!query) {
+    const sorted = [...QUEENS].sort((a, b) => a.name.localeCompare(b.name));
+    label.textContent = `All ${sorted.length} queens`;
+    container.innerHTML = sorted.length
+      ? `<div class="browse-grid">${sorted.map(q => `
+          <div class="browse-card" onclick="searchFor(${JSON.stringify(q.name)})">
+            <div class="bc-name">${q.name}</div>
+            <div class="bc-stat">${q.seasons.length} appearance${q.seasons.length !== 1 ? "s" : ""}</div>
+          </div>`).join("")}</div>`
+      : `<div class="empty"><div class="empty-icon">✨</div><p>No queens yet — add the first one!</p></div>`;
+    return;
+  }
+
+  const results = QUEENS.filter(q => q.name.toLowerCase().includes(query));
+  label.textContent = results.length ? `${results.length} queen${results.length !== 1 ? "s" : ""} found` : "";
+
+  if (!results.length) {
+    container.innerHTML = `<div class="empty"><div class="empty-icon">🪄</div><p>No queens found matching "<em>${query}</em>"</p></div>`;
+    return;
+  }
+
+  container.innerHTML = `<div class="queens-grid">${results.map(q => {
+    const idx  = QUEENS.indexOf(q);
+    const wins = winCount(q);
+    const rows = q.seasons.map(s => `
+      <div class="season-row ${placementClass(s.placement)}">
+        <span class="season-name">${s.season}</span>
+        <span class="placement-badge">${s.placement}</span>
+      </div>`).join("");
+    return `
+      <div class="queen-card">
+        <div class="queen-header">
+          <div class="queen-name">${q.name}</div>
+          <div class="queen-meta">
+            <span class="meta-chip">${q.seasons.length} appearance${q.seasons.length !== 1 ? "s" : ""}</span>
+            ${wins ? `<span class="meta-chip wins">♛ ${wins} win${wins !== 1 ? "s" : ""}</span>` : ""}
+          </div>
+        </div>
+        <div class="seasons-list">${rows}</div>
+        <div class="card-footer">
+          <button class="btn-edit-card" onclick="openEditForIndex(${idx})">✎ Edit</button>
+        </div>
+      </div>`;
+  }).join("")}</div>`;
+}
+
+function searchFor(name) {
+  document.getElementById("searchInput").value = name;
+  render();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+document.getElementById("searchInput").addEventListener("input", render);
+
+// ── Modal ──────────────────────────────────────────
+function openAdmin(action) {
+  pendingAction = action;
+  document.getElementById("modalOverlay").classList.add("open");
+  if (!authenticated) {
+    showScreen("lockScreen");
+    setTimeout(() => document.getElementById("codeInput").focus(), 200);
+  } else {
+    action === "edit" ? showEditScreen() : showAddScreen();
+  }
+}
+
+function closeModal() {
+  document.getElementById("modalOverlay").classList.remove("open");
+}
+
+function overlayClick(e) {
+  if (e.target === document.getElementById("modalOverlay")) closeModal();
+}
+
+function showScreen(id) {
+  ["lockScreen","addScreen","editScreen"].forEach(s =>
+    document.getElementById(s).classList.toggle("active", s === id));
+}
+
+function checkCode() {
+  const val = document.getElementById("codeInput").value;
+  if (val === SECRET) {
+    authenticated = true;
+    document.getElementById("codeError").textContent = "";
+    document.getElementById("codeInput").value = "";
+    pendingAction === "edit" ? showEditScreen() : showAddScreen();
+  } else {
+    document.getElementById("codeError").textContent = "Wrong code, honey. Try again! 💅";
+    document.getElementById("codeInput").value = "";
+    document.getElementById("codeInput").focus();
+  }
+}
+
+function lockAdmin() {
+  authenticated = false;
+  closeModal();
+}
+
+// ── Add ────────────────────────────────────────────
+function showAddScreen() {
+  showScreen("addScreen");
+  document.getElementById("queenName").value = "";
+  document.getElementById("seasonsBuilder").innerHTML = "";
+  addSeasonRow("seasonsBuilder");
+  setTimeout(() => document.getElementById("queenName").focus(), 100);
+}
+
+function saveQueen() {
+  const name = document.getElementById("queenName").value.trim();
+  if (!name) { showToast("⚠️ Please enter a name!"); return; }
+  const seasons = getSeasonEntries("seasonsBuilder");
+  if (!seasons.length) { showToast("⚠️ Add at least one season!"); return; }
+  QUEENS.push({ name, seasons });
+  showToast(`👑 ${name} has entered the werk room!`);
+  showAddScreen();
+  render();
+}
+
+// ── Edit ───────────────────────────────────────────
+function openEditForIndex(idx) {
+  editIndex = idx;
+  openAdmin("edit");
+}
+
+function showEditScreen() {
+  showScreen("editScreen");
+  const q = QUEENS[editIndex];
+  document.getElementById("editQueenName").value = q.name;
+  const builder = document.getElementById("editSeasonsBuilder");
+  builder.innerHTML = "";
+  q.seasons.forEach(s => addSeasonRow("editSeasonsBuilder", s.season, s.placement));
+}
+
+function saveEdit() {
+  const name = document.getElementById("editQueenName").value.trim();
+  if (!name) { showToast("⚠️ Please enter a name!"); return; }
+  const seasons = getSeasonEntries("editSeasonsBuilder");
+  if (!seasons.length) { showToast("⚠️ Add at least one season!"); return; }
+  QUEENS[editIndex] = { name, seasons };
+  showToast(`✅ ${name} updated!`);
+  closeModal();
+  render();
+}
+
+function confirmDelete() {
+  const q = QUEENS[editIndex];
+  if (confirm(`Delete "${q.name}" from the database? This cannot be undone.`)) {
+    QUEENS.splice(editIndex, 1);
+    showToast(`🗑 ${q.name} has left the werk room.`);
+    closeModal();
+    render();
+  }
+}
+
+// ── Season rows ────────────────────────────────────
+function addSeasonRow(builderId, seasonVal = "", placementVal = "") {
+  const id  = rowId++;
+  const div = document.createElement("div");
+  div.className = "season-entry";
+  div.id = `sr_${id}`;
+  div.innerHTML = `
+    <input class="field-input" placeholder="Season / All Stars X" id="sn_${id}" value="${seasonVal.replace(/"/g,'&quot;')}"/>
+    <input class="field-input" placeholder="Winner / 4th Place…"  id="sp_${id}" value="${placementVal.replace(/"/g,'&quot;')}"/>
+    <button class="btn-remove-season" onclick="removeRow(${id})" title="Remove">×</button>`;
+  document.getElementById(builderId).appendChild(div);
+}
+
+function removeRow(id) {
+  const el = document.getElementById(`sr_${id}`);
+  if (el) el.remove();
+}
+
+function getSeasonEntries(builderId) {
+  const entries = [];
+  document.querySelectorAll(`#${builderId} .season-entry`).forEach(row => {
+    const id = row.id.replace("sr_", "");
+    const s  = document.getElementById(`sn_${id}`).value.trim();
+    const p  = document.getElementById(`sp_${id}`).value.trim();
+    if (s) entries.push({ season: s, placement: p || "—" });
+  });
+  return entries;
+}
+
+// ── Export ─────────────────────────────────────────
+function exportJSON() {
+  const blob = new Blob([JSON.stringify(QUEENS, null, 2)], { type: "application/json" });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement("a");
+  a.href = url; a.download = "queens.json"; a.click();
+  URL.revokeObjectURL(url);
+  showToast("✅ queens.json downloaded! Commit it to GitHub.");
+}
+
+// ── Init ───────────────────────────────────────────
+loadQueens();
+</script>
+</body>
+</html>
