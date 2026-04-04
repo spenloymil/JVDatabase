@@ -10,32 +10,16 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg:         #080610;
-    --surface:    #110e1e;
-    --card:       #160f28;
-    --border:     #271d42;
-    --border2:    #3a2d5e;
-    --pink:       #ff2d78;
-    --magenta:    #d400a8;
-    --gold:       #f5c842;
-    --gold-dim:   #b8941f;
-    --lilac:      #bf80ff;
-    --cyan:       #00e5ff;
-    --text:       #f5eeff;
-    --muted:      #8a72b8;
-    --faint:      #3d2f66;
-    --winner-bg:  rgba(245,200,66,0.15);
-    --winner-bdr: #f5c842;
-    --2nd-bg:     rgba(191,128,255,0.12);
-    --2nd-bdr:    #bf80ff;
-    --low-bg:     rgba(255,45,120,0.12);
-    --low-bdr:    #ff2d78;
-    --high-bg:    rgba(0,229,255,0.10);
-    --high-bdr:   #00e5ff;
-    --elim-bg:    rgba(255,80,80,0.15);
-    --elim-bdr:   #ff5050;
-    --safe-bg:    rgba(255,255,255,0.04);
-    --safe-bdr:   #3a2d5e;
+    --bg:      #080610;
+    --surface: #110e1e;
+    --card:    #160f28;
+    --border:  #271d42;
+    --border2: #3a2d5e;
+    --magenta: #d400a8;
+    --lilac:   #bf80ff;
+    --text:    #f5eeff;
+    --muted:   #8a72b8;
+    --faint:   #3d2f66;
   }
 
   html { scroll-behavior: smooth; }
@@ -51,8 +35,8 @@
     position: fixed;
     inset: 0;
     background:
-      radial-gradient(ellipse 80% 50% at 20% -10%, rgba(180,0,180,0.12) 0%, transparent 60%),
-      radial-gradient(ellipse 60% 40% at 80% 110%, rgba(0,200,255,0.07) 0%, transparent 60%);
+      radial-gradient(ellipse 80% 50% at 20% -10%, rgba(180,0,180,0.10) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 110%, rgba(0,200,255,0.06) 0%, transparent 60%);
     pointer-events: none;
     z-index: 0;
   }
@@ -60,487 +44,224 @@
   .wrap {
     position: relative;
     z-index: 1;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem 5rem;
+    padding: 0 1.2rem 5rem;
   }
 
   /* HERO */
-  .hero {
-    text-align: center;
-    padding: 4rem 1rem 2.5rem;
-  }
+  .hero { text-align: center; padding: 3.5rem 1rem 2rem; }
   .hero-eyebrow {
-    font-size: 0.7rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--magenta);
-    font-weight: 500;
-    margin-bottom: 1rem;
-    opacity: 0;
-    animation: fadeUp 0.6s 0.1s forwards;
+    font-size: 0.68rem; letter-spacing: 0.35em; text-transform: uppercase;
+    color: var(--magenta); font-weight: 500; margin-bottom: 0.85rem;
+    opacity: 0; animation: fadeUp 0.6s 0.1s forwards;
   }
   .hero-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.5rem, 7vw, 5rem);
-    font-weight: 700;
-    line-height: 0.95;
-    letter-spacing: -0.02em;
-    background: linear-gradient(135deg, #fff 0%, var(--lilac) 35%, var(--pink) 65%, var(--gold) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 0.5rem;
-    opacity: 0;
-    animation: fadeUp 0.6s 0.2s forwards;
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    font-weight: 700; line-height: 0.95; letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #fff 0%, var(--lilac) 35%, #ff2d78 65%, #f5c842 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: 0.5rem; opacity: 0; animation: fadeUp 0.6s 0.2s forwards;
   }
   .hero-rule {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin: 0 auto 2.5rem;
-    max-width: 340px;
-    opacity: 0;
-    animation: fadeUp 0.6s 0.3s forwards;
+    display: flex; align-items: center; gap: 1rem;
+    margin: 0 auto 2.5rem; max-width: 300px;
+    opacity: 0; animation: fadeUp 0.6s 0.3s forwards;
   }
-  .hero-rule::before, .hero-rule::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--faint));
-  }
+  .hero-rule::before, .hero-rule::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--faint)); }
   .hero-rule::after { background: linear-gradient(90deg, var(--faint), transparent); }
-  .hero-rule span { color: var(--magenta); font-size: 1.1rem; }
+  .hero-rule span { color: var(--magenta); font-size: 1.05rem; }
+
+  /* STATS */
+  .stats-bar { display: flex; gap: 0.75rem; margin-bottom: 1.8rem; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.6s 0.4s forwards; }
+  .stat-pill { background: var(--surface); border: 1px solid var(--border); border-radius: 30px; padding: 0.35rem 0.9rem; font-size: 0.76rem; color: var(--muted); letter-spacing: 0.05em; }
+  .stat-pill strong { color: var(--lilac); font-weight: 600; }
 
   /* TABS */
-  .tab-bar {
-    display: flex;
-    gap: 0.5rem;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0;
-    opacity: 0;
-    animation: fadeUp 0.6s 0.4s forwards;
-    overflow-x: auto;
-  }
-  .tab-btn {
-    background: none;
-    border: none;
-    color: var(--muted);
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.88rem;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding: 0.6rem 1.2rem;
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-    margin-bottom: -1px;
-    transition: color 0.2s, border-color 0.2s;
-    white-space: nowrap;
-  }
+  .tab-bar { display: flex; gap: 0.35rem; margin-bottom: 1.8rem; border-bottom: 1px solid var(--border); overflow-x: auto; opacity: 0; animation: fadeUp 0.6s 0.45s forwards; scrollbar-width: none; }
+  .tab-bar::-webkit-scrollbar { display: none; }
+  .tab-btn { background: none; border: none; color: var(--muted); font-family: 'Outfit', sans-serif; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.55rem 1.1rem; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color 0.2s, border-color 0.2s; white-space: nowrap; }
   .tab-btn:hover { color: var(--text); }
   .tab-btn.active { color: var(--lilac); border-bottom-color: var(--lilac); }
 
-  /* STATS BAR */
-  .stats-bar {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-    opacity: 0;
-    animation: fadeUp 0.6s 0.5s forwards;
-  }
-  .stat-pill {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 30px;
-    padding: 0.4rem 1rem;
-    font-size: 0.78rem;
-    color: var(--muted);
-    letter-spacing: 0.05em;
-  }
-  .stat-pill strong { color: var(--lilac); font-weight: 600; }
-
   /* SEARCH */
-  .search-wrap {
-    position: relative;
-    margin-bottom: 1.5rem;
-    opacity: 0;
-    animation: fadeUp 0.6s 0.55s forwards;
-  }
-  .search-icon {
-    position: absolute;
-    left: 1.1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--muted);
-    font-size: 1rem;
-    pointer-events: none;
-  }
-  #searchInput {
-    width: 100%;
-    background: var(--surface);
-    border: 1.5px solid var(--border);
-    border-radius: 14px;
-    color: var(--text);
-    font-family: 'Outfit', sans-serif;
-    font-size: 1rem;
-    padding: 0.95rem 1rem 0.95rem 2.8rem;
-    outline: none;
-    transition: border-color 0.25s, box-shadow 0.25s;
-  }
+  .search-wrap { position: relative; margin-bottom: 1.4rem; opacity: 0; animation: fadeUp 0.6s 0.5s forwards; }
+  .search-icon { position: absolute; left: 1.05rem; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+  #searchInput { width: 100%; background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; color: var(--text); font-family: 'Outfit', sans-serif; font-size: 0.95rem; padding: 0.85rem 1rem 0.85rem 2.7rem; outline: none; transition: border-color 0.2s, box-shadow 0.2s; }
   #searchInput::placeholder { color: var(--muted); }
-  #searchInput:focus {
-    border-color: var(--lilac);
-    box-shadow: 0 0 0 4px rgba(191,128,255,0.12);
-  }
-
-  .results-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 1rem;
-    font-weight: 500;
-  }
+  #searchInput:focus { border-color: var(--lilac); box-shadow: 0 0 0 3px rgba(191,128,255,0.12); }
+  .results-label { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.9rem; }
 
   /* BROWSE GRID */
-  .browse-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 0.75rem;
-  }
-  .browse-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 13px;
-    padding: 1rem 1.1rem;
-    cursor: pointer;
-    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
-    animation: cardIn 0.35s ease both;
-  }
-  .browse-card:hover {
-    border-color: var(--border2);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-  }
+  .browse-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 0.65rem; }
+  .browse-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0.9rem 1rem; cursor: pointer; transition: border-color 0.2s, transform 0.2s; animation: cardIn 0.3s ease both; }
+  .browse-card:hover { border-color: var(--border2); transform: translateY(-2px); }
   .browse-card:hover .bc-name { color: var(--lilac); }
-  .bc-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--text);
-    transition: color 0.2s;
-    margin-bottom: 0.2rem;
-    line-height: 1.2;
-  }
-  .bc-stat { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.05em; }
-
-  /* SEASON GRID VIEW */
-  .season-section {
-    margin-bottom: 3rem;
-    animation: cardIn 0.4s ease both;
-  }
-  .season-header {
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-    margin-bottom: 1.2rem;
-  }
-  .season-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--text);
-  }
-  .season-ep-count {
-    font-size: 0.75rem;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
+  .bc-name { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600; color: var(--text); transition: color 0.2s; margin-bottom: 0.15rem; line-height: 1.2; }
+  .bc-stat { font-size: 0.68rem; color: var(--muted); }
 
   /* TRACK RECORD TABLE */
-  .track-wrap {
-    overflow-x: auto;
-    border-radius: 14px;
-    border: 1px solid var(--border);
-  }
+  .season-section { animation: cardIn 0.4s ease both; }
+  .season-meta { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1.1rem; }
+  .season-title-text { font-family: 'Cormorant Garamond', serif; font-size: 1.7rem; font-weight: 700; color: var(--text); }
+  .season-sub { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+
+  .track-scroll { overflow-x: auto; border-radius: 10px; border: 1px solid var(--border); background: var(--card); }
+
   table.track {
-    width: 100%;
     border-collapse: collapse;
-    font-size: 0.82rem;
-    min-width: 500px;
+    font-size: 0.78rem;
+    white-space: nowrap;
+    width: 100%;
   }
-  table.track thead tr {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-  }
+
+  /* Header */
   table.track thead th {
-    padding: 0.7rem 0.9rem;
-    text-align: left;
+    background: #1a1335;
+    padding: 0.5rem 0.55rem;
+    text-align: center;
     font-size: 0.68rem;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.07em;
     text-transform: uppercase;
+    color: var(--text);
+    font-weight: 600;
+    vertical-align: bottom;
+    border-bottom: 1px solid var(--border2);
+  }
+  table.track thead th.th-rank {
+    position: sticky; left: 0; z-index: 4;
+    background: #1a1335;
+    min-width: 46px; width: 46px;
+    border-right: 1px solid var(--border2);
+  }
+  table.track thead th.th-queen {
+    position: sticky; left: 46px; z-index: 4;
+    background: #1a1335;
+    text-align: left; padding-left: 0.9rem;
+    min-width: 160px;
+    border-right: 1px solid var(--border2);
+  }
+  table.track thead th.th-ep { min-width: 66px; }
+  table.track thead th.th-ppe { min-width: 52px; border-left: 1px solid var(--border2); color: var(--muted); font-size: 0.63rem; }
+
+  /* Sub-header row (challenge names) */
+  table.track thead tr.subhead th {
+    background: #130f25;
+    font-size: 0.63rem;
+    font-weight: 400;
     color: var(--muted);
-    font-weight: 500;
-    white-space: nowrap;
+    border-bottom: 2px solid var(--border2);
+    padding: 0.22rem 0.55rem;
+    letter-spacing: 0;
+    text-transform: none;
+    font-style: italic;
   }
-  table.track thead th.ep-th {
-    text-align: center;
-    min-width: 52px;
-  }
-  table.track tbody tr {
-    border-bottom: 1px solid rgba(39,29,66,0.6);
-    transition: background 0.15s;
-  }
+  table.track thead tr.subhead th.th-rank2 { position: sticky; left: 0; z-index: 4; background: #130f25; border-right: 1px solid var(--border2); }
+  table.track thead tr.subhead th.th-queen2 { position: sticky; left: 46px; z-index: 4; background: #130f25; border-right: 1px solid var(--border2); text-align: left; padding-left: 0.9rem; }
+
+  /* Body */
+  table.track tbody tr { border-bottom: 1px solid rgba(39,29,66,0.45); }
   table.track tbody tr:last-child { border-bottom: none; }
-  table.track tbody tr:hover { background: rgba(255,255,255,0.025); }
+  table.track tbody tr:hover { filter: brightness(1.07); }
 
-  .queen-cell {
-    padding: 0.65rem 1rem;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text);
-    white-space: nowrap;
-    position: sticky;
-    left: 0;
+  td.td-rank {
+    position: sticky; left: 0; z-index: 2;
     background: var(--card);
-    z-index: 2;
     border-right: 1px solid var(--border);
-  }
-  table.track tbody tr:hover .queen-cell { background: #1c1230; }
-
-  .result-cell {
     text-align: center;
-    padding: 0.5rem 0.3rem;
+    font-size: 0.7rem; color: var(--muted); font-weight: 700;
+    padding: 0; width: 46px; min-width: 46px;
   }
-
-  .result-badge {
-    display: inline-block;
-    width: 42px;
-    padding: 0.22rem 0;
-    border-radius: 6px;
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  .rb-WIN  { background: var(--winner-bg); color: var(--gold);  border: 1px solid rgba(245,200,66,0.35); }
-  .rb-HIGH { background: var(--high-bg);   color: var(--cyan);  border: 1px solid rgba(0,229,255,0.25); }
-  .rb-SAFE { background: var(--safe-bg);   color: var(--muted); border: 1px solid var(--safe-bdr); }
-  .rb-LOW  { background: var(--low-bg);    color: var(--pink);  border: 1px solid rgba(255,45,120,0.3); }
-  .rb-ELIM { background: var(--elim-bg);   color: #ff5050;      border: 1px solid rgba(255,80,80,0.35); }
-  .rb-MISS { background: none; color: var(--faint); border: 1px dashed var(--faint); }
-  .rb-BTM  { background: var(--low-bg);    color: var(--pink);  border: 1px solid rgba(255,45,120,0.3); }
-  .rb-RUN  { background: var(--2nd-bg);    color: var(--lilac); border: 1px solid rgba(191,128,255,0.3); }
-
-  /* Episode header with lip sync indicator */
-  .ep-head {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.15rem;
-  }
-  .ep-num { font-size: 0.68rem; }
-  .ep-lipsync {
-    font-size: 0.55rem;
-    color: var(--magenta);
-    letter-spacing: 0.05em;
-    line-height: 1;
-    opacity: 0.85;
-  }
-
-  /* Tooltip for lip sync */
-  .result-cell[data-lipsync] { position: relative; cursor: default; }
-  .result-cell[data-lipsync] .rb-ELIM,
-  .result-cell[data-lipsync] .rb-LOW,
-  .result-cell[data-lipsync] .rb-WIN,
-  .result-cell[data-lipsync] .rb-HIGH,
-  .result-cell[data-lipsync] .rb-SAFE,
-  .result-cell[data-lipsync] .rb-BTM,
-  .result-cell[data-lipsync] .rb-RUN {
-    position: relative;
-  }
-  .result-cell .tooltip {
-    display: none;
-    position: absolute;
-    bottom: calc(100% + 6px);
-    left: 50%;
-    transform: translateX(-50%);
+  td.td-queen {
+    position: sticky; left: 46px; z-index: 2;
     background: var(--card);
-    border: 1px solid var(--border2);
-    border-radius: 8px;
-    padding: 0.4rem 0.7rem;
-    font-size: 0.72rem;
-    color: var(--text);
-    white-space: nowrap;
-    z-index: 10;
-    pointer-events: none;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+    border-right: 1px solid var(--border);
+    padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem; font-weight: 700; color: var(--text);
+    min-width: 160px;
   }
-  .result-cell .tooltip::before {
-    content: '♫';
-    color: var(--magenta);
-    margin-right: 0.3rem;
-    font-size: 0.65rem;
+  table.track tbody tr:hover td.td-rank,
+  table.track tbody tr:hover td.td-queen { background: #1c1230; }
+
+  td.td-result {
+    text-align: center; padding: 0;
+    min-width: 66px; height: 34px;
+    vertical-align: middle; position: relative;
   }
-  .result-cell:hover .tooltip { display: block; }
+  td.td-result .cell-inner {
+    display: flex; align-items: center; justify-content: center;
+    height: 34px;
+    font-size: 0.67rem; font-weight: 700;
+    letter-spacing: 0.03em; text-transform: uppercase;
+    padding: 2px 3px; text-align: center; line-height: 1.2;
+  }
+  td.td-ppe {
+    text-align: center; font-size: 0.78rem; font-weight: 600;
+    color: var(--muted); padding: 0.5rem 0.6rem;
+    min-width: 52px; border-left: 1px solid var(--border);
+  }
+
+  /* ── RESULT COLOURS ── (standard drag race wiki palette) */
+  .r-WIN      { background: #1565c0; color: #fff; }
+  .r-TOP2     { background: #29b6f6; color: #fff; }
+  .r-HIGH     { background: #26a69a; color: #fff; }
+  .r-SAFE     { background: #b0bec5; color: #1a1a2e; }
+  .r-LOW      { background: #ef9a9a; color: #7f0000; }
+  .r-BTM2     { background: #c62828; color: #fff; }
+  .r-ELIM     { background: #4e2a04; color: #d7a97a; }
+  .r-GUEST    { background: #424242; color: #bdbdbd; }
+  .r-WINNER   { background: #ffd54f; color: #4e342e; }
+  .r-RUNNERUP { background: #e0e0e0; color: #424242; }
+  .r-LOST1    { background: #ef9a9a; color: #7f0000; }
+  .r-LOST2    { background: #ef9a9a; color: #7f0000; }
+  .r-SPECIAL  { background: #2e7d32; color: #fff; }
+  .r-MISS     { background: transparent; color: #4a3a6a; }
+
+  /* Lip sync tooltip */
+  td.td-result .tip-box {
+    display: none; position: absolute; bottom: calc(100% + 5px); left: 50%;
+    transform: translateX(-50%);
+    background: #1a1335; border: 1px solid var(--border2); border-radius: 7px;
+    padding: 0.32rem 0.6rem; font-size: 0.68rem; color: var(--text);
+    white-space: nowrap; z-index: 20;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+    pointer-events: none; font-family: 'Outfit', sans-serif;
+    font-weight: 400; letter-spacing: 0;
+  }
+  td.td-result:hover .tip-box { display: block; }
 
   /* LEGEND */
-  .legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-bottom: 2rem;
-    opacity: 0;
-    animation: fadeUp 0.6s 0.5s forwards;
-  }
-  .legend-item {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.72rem;
-    color: var(--muted);
-  }
-  .legend-badge {
-    display: inline-block;
-    width: 36px;
-    padding: 0.18rem 0;
-    border-radius: 5px;
-    font-size: 0.62rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-align: center;
-  }
+  .legend { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.5s 0.5s forwards; }
+  .leg-item { display: flex; align-items: center; gap: 0.3rem; font-size: 0.68rem; color: var(--muted); }
+  .leg-swatch { width: 30px; height: 17px; border-radius: 3px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.55rem; font-weight: 700; text-transform: uppercase; flex-shrink: 0; }
 
-  /* EMPTY / ERROR */
-  .empty {
-    text-align: center;
-    padding: 3rem 1rem;
-    color: var(--muted);
-  }
-  .empty-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
-  .empty p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.2rem; }
+  /* EMPTY */
+  .empty { text-align: center; padding: 3rem 1rem; color: var(--muted); }
+  .empty-icon { font-size: 2.2rem; margin-bottom: 0.65rem; }
+  .empty p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.15rem; }
 
   /* MODAL */
-  .modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(4,2,12,0.85);
-    backdrop-filter: blur(8px);
-    z-index: 200;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.25s;
-  }
+  .modal-overlay { position: fixed; inset: 0; background: rgba(4,2,12,0.88); backdrop-filter: blur(8px); z-index: 200; display: flex; align-items: center; justify-content: center; padding: 1rem; opacity: 0; pointer-events: none; transition: opacity 0.25s; }
   .modal-overlay.open { opacity: 1; pointer-events: all; }
-  .modal {
-    background: var(--card);
-    border: 1px solid var(--border2);
-    border-radius: 22px;
-    padding: 2.2rem 2.4rem;
-    width: 100%;
-    max-width: 520px;
-    position: relative;
-    transform: translateY(20px) scale(0.97);
-    transition: transform 0.25s;
-  }
-  .modal-overlay.open .modal { transform: translateY(0) scale(1); }
-  .modal h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.9rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
-    background: linear-gradient(90deg, var(--lilac), var(--pink));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .modal-sub { color: var(--muted); font-size: 0.83rem; margin-bottom: 1.8rem; }
-  .field-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--muted);
-    font-weight: 500;
-    margin-bottom: 0.45rem;
-    display: block;
-  }
-  .field-input {
-    width: 100%;
-    background: var(--surface);
-    border: 1.5px solid var(--border);
-    border-radius: 10px;
-    color: var(--text);
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.95rem;
-    padding: 0.7rem 0.95rem;
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    margin-bottom: 1.1rem;
-  }
-  .field-input:focus { border-color: var(--lilac); box-shadow: 0 0 0 3px rgba(191,128,255,0.12); }
-  .btn-primary {
-    background: linear-gradient(135deg, var(--magenta), #7a00cc);
-    border: none;
-    border-radius: 11px;
-    color: #fff;
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    padding: 0.8rem 2rem;
-    cursor: pointer;
-    width: 100%;
-    transition: opacity 0.2s, transform 0.15s;
-    box-shadow: 0 4px 20px rgba(212,0,168,0.3);
-  }
-  .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
-  .error-msg {
-    font-size: 0.82rem;
-    color: var(--pink);
-    margin-top: -0.7rem;
-    margin-bottom: 0.8rem;
-    min-height: 1rem;
-  }
-  .toast {
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%) translateY(20px);
-    background: var(--surface);
-    border: 1px solid var(--border2);
-    border-radius: 30px;
-    padding: 0.65rem 1.4rem;
-    font-size: 0.88rem;
-    color: var(--text);
-    opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
-    z-index: 300;
-    white-space: nowrap;
-    pointer-events: none;
-  }
+  .modal { background: var(--card); border: 1px solid var(--border2); border-radius: 20px; padding: 2rem 2.2rem; width: 100%; max-width: 480px; transform: translateY(18px) scale(0.97); transition: transform 0.25s; }
+  .modal-overlay.open .modal { transform: none; }
+  .modal h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700; margin-bottom: 0.2rem; background: linear-gradient(90deg, var(--lilac), #ff2d78); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .modal-sub { color: var(--muted); font-size: 0.82rem; margin-bottom: 1.6rem; }
+  .field-label { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-bottom: 0.4rem; display: block; }
+  .field-input { width: 100%; background: var(--surface); border: 1.5px solid var(--border); border-radius: 9px; color: var(--text); font-family: 'Outfit', sans-serif; font-size: 0.93rem; padding: 0.65rem 0.9rem; outline: none; transition: border-color 0.2s; margin-bottom: 1rem; }
+  .field-input:focus { border-color: var(--lilac); }
+  .btn-primary { background: linear-gradient(135deg, var(--magenta), #7a00cc); border: none; border-radius: 10px; color: #fff; font-family: 'Outfit', sans-serif; font-size: 0.93rem; font-weight: 600; letter-spacing: 0.04em; padding: 0.75rem 2rem; cursor: pointer; width: 100%; transition: opacity 0.2s, transform 0.15s; }
+  .btn-primary:hover { opacity: 0.86; transform: translateY(-1px); }
+  .error-msg { font-size: 0.8rem; color: #ff2d78; margin-top: -0.6rem; margin-bottom: 0.75rem; min-height: 1rem; }
+
+  .toast { position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%) translateY(16px); background: var(--surface); border: 1px solid var(--border2); border-radius: 28px; padding: 0.6rem 1.3rem; font-size: 0.85rem; color: var(--text); opacity: 0; transition: opacity 0.3s, transform 0.3s; z-index: 300; white-space: nowrap; pointer-events: none; }
   .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(16px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes cardIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes cardIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
 </style>
@@ -548,7 +269,6 @@
 <body>
 
 <div class="wrap" id="appWrap" style="display:none">
-
   <div class="hero">
     <div class="hero-eyebrow">✦ July &nbsp;&&nbsp; Vivianna's &nbsp;&nbsp; Drag Race ✦</div>
     <h1 class="hero-title">July & Vivianna's Queen Database</h1>
@@ -556,11 +276,8 @@
   </div>
 
   <div class="stats-bar" id="statsBar"></div>
-
-  <!-- TABS -->
   <div class="tab-bar" id="tabBar"></div>
 
-  <!-- QUEEN BROWSE TAB -->
   <div id="tabQueens">
     <div class="search-wrap">
       <span class="search-icon">⌕</span>
@@ -570,15 +287,12 @@
     <div id="queensContainer"></div>
   </div>
 
-  <!-- SEASON TRACK RECORD TABS -->
   <div id="tabTrack" style="display:none">
     <div class="legend" id="legend"></div>
     <div id="trackContainer"></div>
   </div>
-
 </div>
 
-<!-- Login modal -->
 <div class="modal-overlay open" id="modalOverlay">
   <div class="modal">
     <h2>Enter the Werk Room</h2>
@@ -596,73 +310,78 @@
 let QUEENS = [];
 let SEASONS_DATA = [];
 const SECRET = "SPORKY";
-let currentTab = 'queens';
 
-/* ─── RESULT COLOURS ─── */
-const RESULT_CLASS = {
-  'WIN':  'rb-WIN',
-  'HIGH': 'rb-HIGH',
-  'SAFE': 'rb-SAFE',
-  'LOW':  'rb-LOW',
-  'ELIM': 'rb-ELIM',
-  'BTM':  'rb-BTM',
-  'RUN':  'rb-RUN',
-  'MISS': 'rb-MISS',
+/* ── Result config ── */
+const RESULT_MAP = {
+  'WIN':      { label: 'WIN',          cls: 'r-WIN'      },
+  'TOP2':     { label: 'TOP2',         cls: 'r-TOP2'     },
+  'HIGH':     { label: 'HIGH',         cls: 'r-HIGH'     },
+  'SAFE':     { label: 'SAFE',         cls: 'r-SAFE'     },
+  'LOW':      { label: 'LOW',          cls: 'r-LOW'      },
+  'BTM2':     { label: 'BTM2',         cls: 'r-BTM2'     },
+  'BTM':      { label: 'BTM2',         cls: 'r-BTM2'     },
+  'ELIM':     { label: 'ELIM',         cls: 'r-ELIM'     },
+  'GUEST':    { label: 'GUEST',        cls: 'r-GUEST'    },
+  'WINNER':   { label: 'WINNER',       cls: 'r-WINNER'   },
+  'RUNNERUP': { label: 'RUNNER UP',    cls: 'r-RUNNERUP' },
+  'RUN':      { label: 'RUNNER UP',    cls: 'r-RUNNERUP' },
+  'LOST1':    { label: 'LOST 1ST RND', cls: 'r-LOST1'    },
+  'LOST2':    { label: 'LOST 2ND RND', cls: 'r-LOST2'    },
+  'SPECIAL':  { label: 'SPECIAL',      cls: 'r-SPECIAL'  },
 };
 
-const LEGEND_ITEMS = [
-  { code: 'WIN',  label: 'Winner' },
-  { code: 'HIGH', label: 'High' },
-  { code: 'SAFE', label: 'Safe' },
-  { code: 'LOW',  label: 'Low' },
-  { code: 'BTM',  label: 'Bottom' },
-  { code: 'ELIM', label: 'Eliminated' },
-  { code: 'RUN',  label: 'Runner-up' },
-  { code: 'MISS', label: 'Not in episode' },
-];
+const LEGEND_ORDER = ['WIN','TOP2','HIGH','SAFE','LOW','BTM2','ELIM','WINNER','RUNNERUP','LOST1','LOST2','GUEST'];
+const LEGEND_COLORS = {
+  WIN:      { bg:'#1565c0', fg:'#fff' },
+  TOP2:     { bg:'#29b6f6', fg:'#fff' },
+  HIGH:     { bg:'#26a69a', fg:'#fff' },
+  SAFE:     { bg:'#b0bec5', fg:'#1a1a2e' },
+  LOW:      { bg:'#ef9a9a', fg:'#7f0000' },
+  BTM2:     { bg:'#c62828', fg:'#fff' },
+  ELIM:     { bg:'#4e2a04', fg:'#d7a97a' },
+  WINNER:   { bg:'#ffd54f', fg:'#4e342e' },
+  RUNNERUP: { bg:'#e0e0e0', fg:'#424242' },
+  LOST1:    { bg:'#ef9a9a', fg:'#7f0000' },
+  LOST2:    { bg:'#ef9a9a', fg:'#7f0000' },
+  GUEST:    { bg:'#424242', fg:'#bdbdbd' },
+};
+const LEGEND_LABELS = {
+  WIN:'Win', TOP2:'Top 2', HIGH:'High', SAFE:'Safe', LOW:'Low',
+  BTM2:'Bottom 2', ELIM:'Eliminated', WINNER:'Winner', RUNNERUP:'Runner-up',
+  LOST1:'Lost 1st Rnd', LOST2:'Lost 2nd Rnd', GUEST:'Guest',
+};
 
-function resultClass(r) {
-  return RESULT_CLASS[String(r || '').toUpperCase().trim()] || 'rb-SAFE';
+function getResult(code) {
+  const key = String(code || '').toUpperCase().trim();
+  return RESULT_MAP[key] || { label: key || '—', cls: 'r-MISS' };
 }
 
 function placementClass(p) {
   const l = String(p || '').toLowerCase();
-  if (l.includes('winner') || l.includes('1st')) return 'p-winner';
-  if (l.includes('runner') || l.includes('2nd')) return 'p-second';
-  if (l.includes('elim') || l.includes('bottom')) return 'p-low';
+  if (l.includes('winner') || l === '1st') return 'winner';
+  if (l.includes('runner') || l === '2nd') return 'runner';
   return '';
-}
-
-function winCount(queen) {
-  return queen.seasons.filter(s => placementClass(s.placement) === 'p-winner').length;
 }
 
 function showToast(msg) {
   const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
+  t.textContent = msg; t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2200);
 }
 
-/* ─── TABS ─── */
+/* ── Tabs ── */
 function buildTabs() {
   const bar = document.getElementById('tabBar');
   const seasonNames = [...new Set(QUEENS.flatMap(q => q.seasons.map(s => s.season)))].sort();
-
   const tabs = [{ id: 'queens', label: '♛ All Queens' }];
   seasonNames.forEach(s => tabs.push({ id: 'season:' + s, label: s }));
-
   bar.innerHTML = tabs.map(t =>
-    `<button class="tab-btn${t.id === 'queens' ? ' active' : ''}" onclick="switchTab('${t.id}')">${t.label}</button>`
+    `<button class="tab-btn${t.id === 'queens' ? ' active' : ''}" data-tab="${t.id}" onclick="switchTab('${t.id}')">${t.label}</button>`
   ).join('');
 }
 
 function switchTab(id) {
-  currentTab = id;
-  document.querySelectorAll('.tab-btn').forEach(b => {
-    b.classList.toggle('active', b.textContent.trim() === (id === 'queens' ? '♛ All Queens' : id.replace('season:', '')));
-  });
-
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === id));
   if (id === 'queens') {
     document.getElementById('tabQueens').style.display = '';
     document.getElementById('tabTrack').style.display = 'none';
@@ -673,93 +392,103 @@ function switchTab(id) {
   }
 }
 
-/* ─── LEGEND ─── */
+/* ── Legend ── */
 function buildLegend() {
-  document.getElementById('legend').innerHTML = LEGEND_ITEMS.map(it => `
-    <div class="legend-item">
-      <span class="legend-badge ${RESULT_CLASS[it.code]}">${it.code}</span>
-      ${it.label}
-    </div>`).join('');
+  document.getElementById('legend').innerHTML = LEGEND_ORDER.map(code => {
+    const c = LEGEND_COLORS[code];
+    const shortCode = code === 'RUNNERUP' ? 'RU' : code === 'WINNER' ? 'WIN' : code === 'LOST1' ? 'L1' : code === 'LOST2' ? 'L2' : code;
+    return `<div class="leg-item">
+      <span class="leg-swatch" style="background:${c.bg};color:${c.fg}">${shortCode}</span>
+      ${LEGEND_LABELS[code]}
+    </div>`;
+  }).join('');
 }
 
-/* ─── TRACK RECORD GRID ─── */
+/* ── Track Record ── */
 function renderTrack(seasonName) {
   const container = document.getElementById('trackContainer');
-
-  // Find the season object from SEASONS_DATA
   const season = SEASONS_DATA.find(s => s.season === seasonName);
-  if (!season || !season.episodes || season.episodes.length === 0) {
-    // Fallback: show queens who appeared but no episode data
-    const queens = QUEENS.filter(q => q.seasons.some(s => s.season === seasonName));
-    if (!queens.length) {
-      container.innerHTML = `<div class="empty"><div class="empty-icon">🎬</div><p>No data for ${seasonName} yet.</p></div>`;
-      return;
-    }
-    container.innerHTML = `<div class="empty"><div class="empty-icon">📋</div><p>No episode track records added for ${seasonName} yet. Add episodes to your seasons array in queens.json!</p></div>`;
+
+  if (!season || !season.episodes || !season.episodes.length) {
+    container.innerHTML = `<div class="empty"><div class="empty-icon">📋</div><p>No episode data for ${seasonName} yet.</p></div>`;
     return;
   }
 
   const eps = season.episodes;
-  const queens = QUEENS.filter(q => q.seasons.some(s => s.season === seasonName));
-
-  // Sort queens: winners first, then by # of wins desc, then alpha
-  queens.sort((a, b) => {
-    const getWins = q => {
+  const queens = QUEENS
+    .filter(q => q.seasons.some(s => s.season === seasonName))
+    .map(q => {
       const sr = q.seasons.find(s => s.season === seasonName);
-      if (!sr) return 0;
-      const pc = placementClass(sr.placement);
-      return pc === 'p-winner' ? 100 : pc === 'p-second' ? 50 : 0;
-    };
-    const winsA = getWins(a), winsB = getWins(b);
-    if (winsB !== winsA) return winsB - winsA;
-    return a.name.localeCompare(b.name);
-  });
+      return { ...q, seasonRank: sr.rank ?? 99, placement: sr.placement || '', ppe: sr.ppe ?? null };
+    })
+    .sort((a, b) => a.seasonRank - b.seasonRank || a.name.localeCompare(b.name));
 
-  // Build episode header cells
-  const epHeaders = eps.map((ep, i) => {
-    const hasLS = ep.lipSyncSong;
-    return `<th class="ep-th">
-      <div class="ep-head">
-        <span class="ep-num">Ep ${ep.episode ?? (i + 1)}</span>
-        ${hasLS ? `<span class="ep-lipsync">♫</span>` : ''}
-      </div>
-    </th>`;
+  const hasPPE = queens.some(q => q.ppe !== null);
+
+  /* Ordinal helper */
+  const ord = n => {
+    if (!n || n >= 99) return '—';
+    const s = ['th','st','nd','rd'], v = n % 100;
+    return n + (s[(v-20)%10] || s[v] || s[0]);
+  };
+
+  /* Header row 1: EP numbers */
+  const hdEp = eps.map((ep, i) => {
+    const n = ep.episode ?? (i + 1);
+    const ls = ep.lipSyncSong;
+    return `<th class="th-ep">${ls ? `<span style="color:#d400a8;margin-right:2px">♫</span>` : ''}EP.&nbsp;${n}</th>`;
   }).join('');
 
-  // Build rows
-  const rows = queens.map(queen => {
+  /* Header row 2: challenge names */
+  const hdName = eps.map(ep => `<th>${ep.name || ''}</th>`).join('');
+
+  /* Body */
+  const rows = queens.map(q => {
     const cells = eps.map(ep => {
-      const track = ep.results && ep.results[queen.name];
-      const code = track ? String(track).toUpperCase().trim() : 'MISS';
-      const cls = resultClass(code);
+      const raw = ep.results ? ep.results[q.name] : null;
+      const res = getResult(raw);
       const ls = ep.lipSyncSong;
-      if (ls) {
-        return `<td class="result-cell" data-lipsync="1">
-          <span class="result-badge ${cls}">${code}</span>
-          <span class="tooltip">${ls}</span>
-        </td>`;
-      }
-      return `<td class="result-cell"><span class="result-badge ${cls}">${code}</span></td>`;
+      return `<td class="td-result">
+        <div class="cell-inner ${res.cls}">${raw ? res.label : ''}</div>
+        ${ls && raw ? `<div class="tip-box">♫ ${ls}</div>` : ''}
+      </td>`;
     }).join('');
 
+    const ppeCell = hasPPE
+      ? `<td class="td-ppe">${q.ppe !== null ? Number(q.ppe).toFixed(2) : '—'}</td>`
+      : '';
+
     return `<tr>
-      <td class="queen-cell">${queen.name}</td>
+      <td class="td-rank">${ord(q.seasonRank)}</td>
+      <td class="td-queen">${q.name}</td>
       ${cells}
+      ${ppeCell}
     </tr>`;
   }).join('');
 
+  const ppeH = hasPPE ? `<th class="th-ppe">PPE</th>` : '';
+  const ppeH2 = hasPPE ? `<th></th>` : '';
+
   container.innerHTML = `
     <div class="season-section">
-      <div class="season-header">
-        <span class="season-title">${seasonName}</span>
-        <span class="season-ep-count">${eps.length} episode${eps.length !== 1 ? 's' : ''} · ${queens.length} queen${queens.length !== 1 ? 's' : ''}</span>
+      <div class="season-meta">
+        <span class="season-title-text">${seasonName}</span>
+        <span class="season-sub">${eps.length} ep${eps.length !== 1 ? 's' : ''} · ${queens.length} queens</span>
       </div>
-      <div class="track-wrap">
+      <div class="track-scroll">
         <table class="track">
           <thead>
             <tr>
-              <th style="position:sticky;left:0;background:var(--surface);z-index:3;">Queen</th>
-              ${epHeaders}
+              <th class="th-rank">Rank</th>
+              <th class="th-queen">${seasonName}</th>
+              ${hdEp}
+              ${ppeH}
+            </tr>
+            <tr class="subhead">
+              <th class="th-rank2"></th>
+              <th class="th-queen2"></th>
+              ${hdName}
+              ${ppeH2}
             </tr>
           </thead>
           <tbody>${rows}</tbody>
@@ -768,44 +497,34 @@ function renderTrack(seasonName) {
     </div>`;
 }
 
-/* ─── QUEEN BROWSE ─── */
+/* ── Browse ── */
 function render() {
   const query = document.getElementById('searchInput').value.trim().toLowerCase();
   const container = document.getElementById('queensContainer');
   const label = document.getElementById('resultsLabel');
   const statsBar = document.getElementById('statsBar');
 
-  const totalSeasons = QUEENS.reduce((a, q) => a + q.seasons.length, 0);
-  const winners = QUEENS.filter(q => q.seasons.some(s => placementClass(s.placement) === 'p-winner')).length;
+  const totalApps = QUEENS.reduce((a, q) => a + q.seasons.length, 0);
+  const winners = QUEENS.filter(q => q.seasons.some(s => placementClass(s.placement) === 'winner')).length;
   statsBar.innerHTML = `
     <div class="stat-pill"><strong>${QUEENS.length}</strong> Queens</div>
-    <div class="stat-pill"><strong>${totalSeasons}</strong> Appearances</div>
-    <div class="stat-pill"><strong>${winners}</strong> Winners</div>
-  `;
+    <div class="stat-pill"><strong>${totalApps}</strong> Appearances</div>
+    <div class="stat-pill"><strong>${winners}</strong> Winners</div>`;
 
-  if (!query) {
-    const sorted = [...QUEENS].sort((a, b) => a.name.localeCompare(b.name));
-    label.textContent = `All ${sorted.length} queens`;
-    container.innerHTML = `<div class="browse-grid">${
-      sorted.map(q => `
-        <div class="browse-card" onclick="searchFor('${q.name.replace(/'/g,"\\'")}')">
-          <div class="bc-name">${q.name}</div>
-          <div class="bc-stat">${q.seasons.length} appearance${q.seasons.length !== 1 ? 's' : ''}</div>
-        </div>`).join('')
-    }</div>`;
+  const list = query
+    ? QUEENS.filter(q => q.name.toLowerCase().includes(query))
+    : [...QUEENS].sort((a, b) => a.name.localeCompare(b.name));
+
+  label.textContent = query
+    ? (list.length ? `${list.length} queen${list.length !== 1 ? 's' : ''} found` : '')
+    : `All ${list.length} queens`;
+
+  if (!list.length) {
+    container.innerHTML = `<div class="empty"><div class="empty-icon">🪄</div><p>No queens found for "<em>${query}</em>"</p></div>`;
     return;
   }
-
-  const results = QUEENS.filter(q => q.name.toLowerCase().includes(query));
-  label.textContent = results.length ? `${results.length} queen${results.length !== 1 ? 's' : ''} found` : '';
-
-  if (!results.length) {
-    container.innerHTML = `<div class="empty"><div class="empty-icon">🪄</div><p>No queens found matching "<em>${query}</em>"</p></div>`;
-    return;
-  }
-
   container.innerHTML = `<div class="browse-grid">${
-    results.map(q => `
+    list.map(q => `
       <div class="browse-card" onclick="searchFor('${q.name.replace(/'/g,"\\'")}')">
         <div class="bc-name">${q.name}</div>
         <div class="bc-stat">${q.seasons.length} appearance${q.seasons.length !== 1 ? 's' : ''}</div>
@@ -818,40 +537,28 @@ function searchFor(name) {
   render();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
 document.getElementById('searchInput').addEventListener('input', render);
 
-/* ─── LOAD DATA ─── */
+/* ── Load ── */
 async function loadQueens() {
   try {
     const res = await fetch('queens.json', { cache: 'no-store' });
-    if (!res.ok) throw new Error(`queens.json not found (${res.status})`);
+    if (!res.ok) throw new Error(res.status);
     const data = await res.json();
-
-    // Support both old format (array of queens) and new format ({ queens, seasons })
-    if (Array.isArray(data)) {
-      QUEENS = data;
-      SEASONS_DATA = [];
-    } else {
-      QUEENS = data.queens || [];
-      SEASONS_DATA = data.seasons || [];
-    }
-
-    buildTabs();
-    buildLegend();
-    render();
+    if (Array.isArray(data)) { QUEENS = data; SEASONS_DATA = []; }
+    else { QUEENS = data.queens || []; SEASONS_DATA = data.seasons || []; }
+    buildTabs(); buildLegend(); render();
   } catch (err) {
     console.error(err);
     showToast('Could not load queens.json');
-    document.getElementById('queensContainer').innerHTML = `
-      <div class="empty"><div class="empty-icon">⚠️</div><p>Could not load queens.json</p></div>`;
+    document.getElementById('queensContainer').innerHTML =
+      `<div class="empty"><div class="empty-icon">⚠️</div><p>Could not load queens.json</p></div>`;
   }
 }
 
-/* ─── LOGIN ─── */
+/* ── Login ── */
 async function checkCode() {
-  const val = document.getElementById('codeInput').value;
-  if (val === SECRET) {
+  if (document.getElementById('codeInput').value === SECRET) {
     document.getElementById('codeError').textContent = '';
     document.getElementById('modalOverlay').classList.remove('open');
     document.getElementById('appWrap').style.display = 'block';
