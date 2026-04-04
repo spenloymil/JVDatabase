@@ -7,9 +7,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  /* ═══════════════════════════════════════════
-     ROOT & RESET
-  ═══════════════════════════════════════════ */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
@@ -27,72 +24,52 @@
     --text:       #f5eeff;
     --muted:      #8a72b8;
     --faint:      #3d2f66;
-    --winner-bg:  rgba(245,200,66,0.08);
+    --winner-bg:  rgba(245,200,66,0.15);
     --winner-bdr: #f5c842;
-    --2nd-bg:     rgba(191,128,255,0.08);
+    --2nd-bg:     rgba(191,128,255,0.12);
     --2nd-bdr:    #bf80ff;
-    --low-bg:     rgba(255,45,120,0.08);
+    --low-bg:     rgba(255,45,120,0.12);
     --low-bdr:    #ff2d78;
+    --high-bg:    rgba(0,229,255,0.10);
+    --high-bdr:   #00e5ff;
+    --elim-bg:    rgba(255,80,80,0.15);
+    --elim-bdr:   #ff5050;
+    --safe-bg:    rgba(255,255,255,0.04);
+    --safe-bdr:   #3a2d5e;
   }
 
   html { scroll-behavior: smooth; }
-
   body {
     background: var(--bg);
     color: var(--text);
     font-family: 'Outfit', sans-serif;
     min-height: 100vh;
     overflow-x: hidden;
-    cursor: default;
   }
-
-  /* ═══════════════════════════════════════════
-     BACKGROUND TEXTURE
-  ═══════════════════════════════════════════ */
   body::before {
     content: '';
     position: fixed;
     inset: 0;
     background:
       radial-gradient(ellipse 80% 50% at 20% -10%, rgba(180,0,180,0.12) 0%, transparent 60%),
-      radial-gradient(ellipse 60% 40% at 80% 110%, rgba(0,200,255,0.07) 0%, transparent 60%),
-      radial-gradient(ellipse 40% 30% at 50% 50%, rgba(100,0,200,0.06) 0%, transparent 70%);
+      radial-gradient(ellipse 60% 40% at 80% 110%, rgba(0,200,255,0.07) 0%, transparent 60%);
     pointer-events: none;
     z-index: 0;
   }
 
-  /* noise grain */
-  body::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.4;
-  }
-
-  /* ═══════════════════════════════════════════
-     LAYOUT
-  ═══════════════════════════════════════════ */
   .wrap {
     position: relative;
     z-index: 1;
-    max-width: 860px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 1.5rem 5rem;
-    display: none;
   }
 
-  /* ═══════════════════════════════════════════
-     HERO
-  ═══════════════════════════════════════════ */
+  /* HERO */
   .hero {
     text-align: center;
-    padding: 4rem 1rem 3rem;
-    position: relative;
+    padding: 4rem 1rem 2.5rem;
   }
-
   .hero-eyebrow {
     font-size: 0.7rem;
     letter-spacing: 0.35em;
@@ -103,10 +80,9 @@
     opacity: 0;
     animation: fadeUp 0.6s 0.1s forwards;
   }
-
   .hero-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-size: clamp(2.5rem, 7vw, 5rem);
     font-weight: 700;
     line-height: 0.95;
     letter-spacing: -0.02em;
@@ -118,19 +94,6 @@
     opacity: 0;
     animation: fadeUp 0.6s 0.2s forwards;
   }
-
-  .hero-sub {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: clamp(1rem, 2.5vw, 1.4rem);
-    color: var(--muted);
-    font-weight: 300;
-    margin-bottom: 2.5rem;
-    opacity: 0;
-    animation: fadeUp 0.6s 0.3s forwards;
-  }
-
-  /* decorative rule */
   .hero-rule {
     display: flex;
     align-items: center;
@@ -138,7 +101,7 @@
     margin: 0 auto 2.5rem;
     max-width: 340px;
     opacity: 0;
-    animation: fadeUp 0.6s 0.4s forwards;
+    animation: fadeUp 0.6s 0.3s forwards;
   }
   .hero-rule::before, .hero-rule::after {
     content: '';
@@ -149,55 +112,44 @@
   .hero-rule::after { background: linear-gradient(90deg, var(--faint), transparent); }
   .hero-rule span { color: var(--magenta); font-size: 1.1rem; }
 
-  /* ═══════════════════════════════════════════
-     SEARCH
-  ═══════════════════════════════════════════ */
-  .search-wrap {
-    position: relative;
-    margin-bottom: 2.5rem;
+  /* TABS */
+  .tab-bar {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0;
     opacity: 0;
-    animation: fadeUp 0.6s 0.5s forwards;
+    animation: fadeUp 0.6s 0.4s forwards;
+    overflow-x: auto;
   }
-
-  .search-icon {
-    position: absolute;
-    left: 1.1rem;
-    top: 50%;
-    transform: translateY(-50%);
+  .tab-btn {
+    background: none;
+    border: none;
     color: var(--muted);
-    font-size: 1rem;
-    pointer-events: none;
-  }
-
-  #searchInput {
-    width: 100%;
-    background: var(--surface);
-    border: 1.5px solid var(--border);
-    border-radius: 14px;
-    color: var(--text);
     font-family: 'Outfit', sans-serif;
-    font-size: 1rem;
-    padding: 0.95rem 1rem 0.95rem 2.8rem;
-    outline: none;
-    transition: border-color 0.25s, box-shadow 0.25s;
-    letter-spacing: 0.01em;
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
   }
-  #searchInput::placeholder { color: var(--muted); }
-  #searchInput:focus {
-    border-color: var(--lilac);
-    box-shadow: 0 0 0 4px rgba(191,128,255,0.12), 0 0 30px rgba(191,128,255,0.06);
-  }
+  .tab-btn:hover { color: var(--text); }
+  .tab-btn.active { color: var(--lilac); border-bottom-color: var(--lilac); }
 
-  /* ═══════════════════════════════════════════
-     STATS BAR
-  ═══════════════════════════════════════════ */
+  /* STATS BAR */
   .stats-bar {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
-    opacity: 0;
-    animation: fadeUp 0.6s 0.6s forwards;
     flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp 0.6s 0.5s forwards;
   }
   .stat-pill {
     background: var(--surface);
@@ -210,9 +162,40 @@
   }
   .stat-pill strong { color: var(--lilac); font-weight: 600; }
 
-  /* ═══════════════════════════════════════════
-     RESULTS LABEL
-  ═══════════════════════════════════════════ */
+  /* SEARCH */
+  .search-wrap {
+    position: relative;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp 0.6s 0.55s forwards;
+  }
+  .search-icon {
+    position: absolute;
+    left: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    font-size: 1rem;
+    pointer-events: none;
+  }
+  #searchInput {
+    width: 100%;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    color: var(--text);
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    padding: 0.95rem 1rem 0.95rem 2.8rem;
+    outline: none;
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  #searchInput::placeholder { color: var(--muted); }
+  #searchInput:focus {
+    border-color: var(--lilac);
+    box-shadow: 0 0 0 4px rgba(191,128,255,0.12);
+  }
+
   .results-label {
     font-size: 0.7rem;
     letter-spacing: 0.2em;
@@ -222,125 +205,12 @@
     font-weight: 500;
   }
 
-  /* ═══════════════════════════════════════════
-     QUEEN CARDS
-  ═══════════════════════════════════════════ */
-  .queens-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr));
-    gap: 1rem;
-  }
-
-  .queen-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 1.6rem 1.8rem 1.5rem;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
-    animation: cardIn 0.4s ease both;
-  }
-  .queen-card:hover {
-    transform: translateY(-3px);
-    border-color: var(--border2);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(191,128,255,0.08);
-  }
-
-  /* top gradient stripe */
-  .queen-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--magenta), var(--lilac), var(--cyan));
-    opacity: 0.7;
-  }
-
-  /* decorative corner glow */
-  .queen-card::after {
-    content: '';
-    position: absolute;
-    top: -40px; right: -40px;
-    width: 120px; height: 120px;
-    background: radial-gradient(circle, rgba(191,128,255,0.08) 0%, transparent 70%);
-    pointer-events: none;
-  }
-
-  .queen-header { margin-bottom: 1.1rem; }
-
-  .queen-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.65rem;
-    font-weight: 600;
-    color: var(--text);
-    line-height: 1.1;
-    margin-bottom: 0.25rem;
-  }
-
-  .queen-meta {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .meta-chip {
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--muted);
-    background: rgba(255,255,255,0.04);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 0.18rem 0.6rem;
-  }
-  .meta-chip.wins { color: var(--gold); border-color: rgba(245,200,66,0.25); background: rgba(245,200,66,0.06); }
-
-  .seasons-list { display: flex; flex-direction: column; gap: 0.35rem; }
-
-  .season-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 0.85rem;
-    border-radius: 9px;
-    background: rgba(255,255,255,0.03);
-    border-left: 3px solid var(--border2);
-    transition: background 0.15s;
-  }
-  .season-row:hover { background: rgba(255,255,255,0.055); }
-
-  .season-row.p-winner { border-left-color: var(--winner-bdr); background: var(--winner-bg); }
-  .season-row.p-second { border-left-color: var(--2nd-bdr); background: var(--2nd-bg); }
-  .season-row.p-low    { border-left-color: var(--low-bdr);  background: var(--low-bg); }
-
-  .season-name { font-size: 0.88rem; color: var(--text); font-weight: 500; }
-
-  .placement-badge {
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding: 0.2rem 0.65rem;
-    border-radius: 20px;
-    background: rgba(255,255,255,0.06);
-    color: var(--muted);
-    white-space: nowrap;
-  }
-  .p-winner .placement-badge { background: rgba(245,200,66,0.15); color: var(--gold); }
-  .p-second .placement-badge { background: rgba(191,128,255,0.18); color: var(--lilac); }
-  .p-low    .placement-badge { background: rgba(255,45,120,0.15);  color: var(--pink); }
-
-  /* ═══════════════════════════════════════════
-     BROWSE GRID (compact, no search)
-  ═══════════════════════════════════════════ */
+  /* BROWSE GRID */
   .browse-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 0.75rem;
   }
-
   .browse-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -356,7 +226,6 @@
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
   }
   .browse-card:hover .bc-name { color: var(--lilac); }
-
   .bc-name {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.05rem;
@@ -366,15 +235,190 @@
     margin-bottom: 0.2rem;
     line-height: 1.2;
   }
-  .bc-stat {
-    font-size: 0.7rem;
+  .bc-stat { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.05em; }
+
+  /* SEASON GRID VIEW */
+  .season-section {
+    margin-bottom: 3rem;
+    animation: cardIn 0.4s ease both;
+  }
+  .season-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .season-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .season-ep-count {
+    font-size: 0.75rem;
     color: var(--muted);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
 
-  /* ═══════════════════════════════════════════
-     EMPTY STATE
-  ═══════════════════════════════════════════ */
+  /* TRACK RECORD TABLE */
+  .track-wrap {
+    overflow-x: auto;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+  }
+  table.track {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    min-width: 500px;
+  }
+  table.track thead tr {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  table.track thead th {
+    padding: 0.7rem 0.9rem;
+    text-align: left;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  table.track thead th.ep-th {
+    text-align: center;
+    min-width: 52px;
+  }
+  table.track tbody tr {
+    border-bottom: 1px solid rgba(39,29,66,0.6);
+    transition: background 0.15s;
+  }
+  table.track tbody tr:last-child { border-bottom: none; }
+  table.track tbody tr:hover { background: rgba(255,255,255,0.025); }
+
+  .queen-cell {
+    padding: 0.65rem 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+    position: sticky;
+    left: 0;
+    background: var(--card);
+    z-index: 2;
+    border-right: 1px solid var(--border);
+  }
+  table.track tbody tr:hover .queen-cell { background: #1c1230; }
+
+  .result-cell {
+    text-align: center;
+    padding: 0.5rem 0.3rem;
+  }
+
+  .result-badge {
+    display: inline-block;
+    width: 42px;
+    padding: 0.22rem 0;
+    border-radius: 6px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .rb-WIN  { background: var(--winner-bg); color: var(--gold);  border: 1px solid rgba(245,200,66,0.35); }
+  .rb-HIGH { background: var(--high-bg);   color: var(--cyan);  border: 1px solid rgba(0,229,255,0.25); }
+  .rb-SAFE { background: var(--safe-bg);   color: var(--muted); border: 1px solid var(--safe-bdr); }
+  .rb-LOW  { background: var(--low-bg);    color: var(--pink);  border: 1px solid rgba(255,45,120,0.3); }
+  .rb-ELIM { background: var(--elim-bg);   color: #ff5050;      border: 1px solid rgba(255,80,80,0.35); }
+  .rb-MISS { background: none; color: var(--faint); border: 1px dashed var(--faint); }
+  .rb-BTM  { background: var(--low-bg);    color: var(--pink);  border: 1px solid rgba(255,45,120,0.3); }
+  .rb-RUN  { background: var(--2nd-bg);    color: var(--lilac); border: 1px solid rgba(191,128,255,0.3); }
+
+  /* Episode header with lip sync indicator */
+  .ep-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+  }
+  .ep-num { font-size: 0.68rem; }
+  .ep-lipsync {
+    font-size: 0.55rem;
+    color: var(--magenta);
+    letter-spacing: 0.05em;
+    line-height: 1;
+    opacity: 0.85;
+  }
+
+  /* Tooltip for lip sync */
+  .result-cell[data-lipsync] { position: relative; cursor: default; }
+  .result-cell[data-lipsync] .rb-ELIM,
+  .result-cell[data-lipsync] .rb-LOW,
+  .result-cell[data-lipsync] .rb-WIN,
+  .result-cell[data-lipsync] .rb-HIGH,
+  .result-cell[data-lipsync] .rb-SAFE,
+  .result-cell[data-lipsync] .rb-BTM,
+  .result-cell[data-lipsync] .rb-RUN {
+    position: relative;
+  }
+  .result-cell .tooltip {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--card);
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.72rem;
+    color: var(--text);
+    white-space: nowrap;
+    z-index: 10;
+    pointer-events: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  }
+  .result-cell .tooltip::before {
+    content: '♫';
+    color: var(--magenta);
+    margin-right: 0.3rem;
+    font-size: 0.65rem;
+  }
+  .result-cell:hover .tooltip { display: block; }
+
+  /* LEGEND */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeUp 0.6s 0.5s forwards;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+  .legend-badge {
+    display: inline-block;
+    width: 36px;
+    padding: 0.18rem 0;
+    border-radius: 5px;
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* EMPTY / ERROR */
   .empty {
     text-align: center;
     padding: 3rem 1rem;
@@ -383,9 +427,7 @@
   .empty-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
   .empty p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.2rem; }
 
-  /* ═══════════════════════════════════════════
-     ADMIN MODAL
-  ═══════════════════════════════════════════ */
+  /* MODAL */
   .modal-overlay {
     position: fixed;
     inset: 0;
@@ -400,11 +442,7 @@
     pointer-events: none;
     transition: opacity 0.25s;
   }
-  .modal-overlay.open {
-    opacity: 1;
-    pointer-events: all;
-  }
-
+  .modal-overlay.open { opacity: 1; pointer-events: all; }
   .modal {
     background: var(--card);
     border: 1px solid var(--border2);
@@ -412,16 +450,11 @@
     padding: 2.2rem 2.4rem;
     width: 100%;
     max-width: 520px;
-    max-height: 90vh;
-    overflow-y: auto;
     position: relative;
     transform: translateY(20px) scale(0.97);
     transition: transform 0.25s;
   }
-  .modal-overlay.open .modal {
-    transform: translateY(0) scale(1);
-  }
-
+  .modal-overlay.open .modal { transform: translateY(0) scale(1); }
   .modal h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.9rem;
@@ -432,13 +465,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  .modal-sub {
-    color: var(--muted);
-    font-size: 0.83rem;
-    margin-bottom: 1.8rem;
-    letter-spacing: 0.03em;
-  }
-
+  .modal-sub { color: var(--muted); font-size: 0.83rem; margin-bottom: 1.8rem; }
   .field-label {
     font-size: 0.7rem;
     letter-spacing: 0.18em;
@@ -448,7 +475,6 @@
     margin-bottom: 0.45rem;
     display: block;
   }
-
   .field-input {
     width: 100%;
     background: var(--surface);
@@ -462,11 +488,7 @@
     transition: border-color 0.2s, box-shadow 0.2s;
     margin-bottom: 1.1rem;
   }
-  .field-input:focus {
-    border-color: var(--lilac);
-    box-shadow: 0 0 0 3px rgba(191,128,255,0.12);
-  }
-
+  .field-input:focus { border-color: var(--lilac); box-shadow: 0 0 0 3px rgba(191,128,255,0.12); }
   .btn-primary {
     background: linear-gradient(135deg, var(--magenta), #7a00cc);
     border: none;
@@ -483,17 +505,13 @@
     box-shadow: 0 4px 20px rgba(212,0,168,0.3);
   }
   .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
-  .btn-primary:active { transform: translateY(0); }
-
   .error-msg {
     font-size: 0.82rem;
     color: var(--pink);
     margin-top: -0.7rem;
     margin-bottom: 0.8rem;
-    padding-left: 0.3rem;
     min-height: 1rem;
   }
-
   .toast {
     position: fixed;
     bottom: 2rem;
@@ -511,61 +529,52 @@
     white-space: nowrap;
     pointer-events: none;
   }
-  .toast.show {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(16px); }
     to   { opacity: 1; transform: translateY(0); }
   }
   @keyframes cardIn {
-    from { opacity: 0; transform: translateY(12px); }
+    from { opacity: 0; transform: translateY(10px); }
     to   { opacity: 1; transform: translateY(0); }
   }
 
-  /* stagger cards */
-  .queen-card:nth-child(1), .browse-card:nth-child(1) { animation-delay: 0.05s; }
-  .queen-card:nth-child(2), .browse-card:nth-child(2) { animation-delay: 0.10s; }
-  .queen-card:nth-child(3), .browse-card:nth-child(3) { animation-delay: 0.14s; }
-  .queen-card:nth-child(4), .browse-card:nth-child(4) { animation-delay: 0.18s; }
-  .queen-card:nth-child(5), .browse-card:nth-child(5) { animation-delay: 0.21s; }
-  .queen-card:nth-child(6), .browse-card:nth-child(6) { animation-delay: 0.24s; }
-  .queen-card:nth-child(n+7), .browse-card:nth-child(n+7) { animation-delay: 0.26s; }
-
-  /* scrollbar */
-  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
 </style>
 </head>
 <body>
 
-<!-- MAIN APP -->
-<div class="wrap" id="appWrap">
+<div class="wrap" id="appWrap" style="display:none">
 
-  <!-- Hero -->
   <div class="hero">
     <div class="hero-eyebrow">✦ July &nbsp;&&nbsp; Vivianna's &nbsp;&nbsp; Drag Race ✦</div>
     <h1 class="hero-title">July & Vivianna's Queen Database</h1>
     <div class="hero-rule"><span>♛</span></div>
   </div>
 
-  <!-- Stats bar -->
   <div class="stats-bar" id="statsBar"></div>
 
-  <!-- Search -->
-  <div class="search-wrap">
-    <span class="search-icon">⌕</span>
-    <input type="text" id="searchInput" placeholder="Search queens by name…" autocomplete="off" spellcheck="false"/>
+  <!-- TABS -->
+  <div class="tab-bar" id="tabBar"></div>
+
+  <!-- QUEEN BROWSE TAB -->
+  <div id="tabQueens">
+    <div class="search-wrap">
+      <span class="search-icon">⌕</span>
+      <input type="text" id="searchInput" placeholder="Search queens by name…" autocomplete="off" spellcheck="false"/>
+    </div>
+    <div class="results-label" id="resultsLabel"></div>
+    <div id="queensContainer"></div>
   </div>
 
-  <!-- Results label -->
-  <div class="results-label" id="resultsLabel"></div>
-
-  <!-- Queen list / grid -->
-  <div id="queensContainer"></div>
+  <!-- SEASON TRACK RECORD TABS -->
+  <div id="tabTrack" style="display:none">
+    <div class="legend" id="legend"></div>
+    <div id="trackContainer"></div>
+  </div>
 
 </div>
 
@@ -581,42 +590,193 @@
   </div>
 </div>
 
-<!-- Toast -->
 <div class="toast" id="toast"></div>
 
 <script>
 let QUEENS = [];
+let SEASONS_DATA = [];
 const SECRET = "SPORKY";
-let authenticated = false;
+let currentTab = 'queens';
+
+/* ─── RESULT COLOURS ─── */
+const RESULT_CLASS = {
+  'WIN':  'rb-WIN',
+  'HIGH': 'rb-HIGH',
+  'SAFE': 'rb-SAFE',
+  'LOW':  'rb-LOW',
+  'ELIM': 'rb-ELIM',
+  'BTM':  'rb-BTM',
+  'RUN':  'rb-RUN',
+  'MISS': 'rb-MISS',
+};
+
+const LEGEND_ITEMS = [
+  { code: 'WIN',  label: 'Winner' },
+  { code: 'HIGH', label: 'High' },
+  { code: 'SAFE', label: 'Safe' },
+  { code: 'LOW',  label: 'Low' },
+  { code: 'BTM',  label: 'Bottom' },
+  { code: 'ELIM', label: 'Eliminated' },
+  { code: 'RUN',  label: 'Runner-up' },
+  { code: 'MISS', label: 'Not in episode' },
+];
+
+function resultClass(r) {
+  return RESULT_CLASS[String(r || '').toUpperCase().trim()] || 'rb-SAFE';
+}
 
 function placementClass(p) {
-  const l = String(p || "").toLowerCase();
-  if (l.includes("winner") || l.includes("1st")) return "p-winner";
-  if (l.includes("runner") || l.includes("2nd")) return "p-second";
-  if (l.includes("elim") || l.includes("bottom")) return "p-low";
-  return "";
+  const l = String(p || '').toLowerCase();
+  if (l.includes('winner') || l.includes('1st')) return 'p-winner';
+  if (l.includes('runner') || l.includes('2nd')) return 'p-second';
+  if (l.includes('elim') || l.includes('bottom')) return 'p-low';
+  return '';
 }
 
 function winCount(queen) {
-  return queen.seasons.filter(s => placementClass(s.placement) === "p-winner").length;
+  return queen.seasons.filter(s => placementClass(s.placement) === 'p-winner').length;
 }
 
 function showToast(msg) {
-  const t = document.getElementById("toast");
+  const t = document.getElementById('toast');
   t.textContent = msg;
-  t.classList.add("show");
-  setTimeout(() => t.classList.remove("show"), 2200);
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2200);
 }
 
+/* ─── TABS ─── */
+function buildTabs() {
+  const bar = document.getElementById('tabBar');
+  const seasonNames = [...new Set(QUEENS.flatMap(q => q.seasons.map(s => s.season)))].sort();
+
+  const tabs = [{ id: 'queens', label: '♛ All Queens' }];
+  seasonNames.forEach(s => tabs.push({ id: 'season:' + s, label: s }));
+
+  bar.innerHTML = tabs.map(t =>
+    `<button class="tab-btn${t.id === 'queens' ? ' active' : ''}" onclick="switchTab('${t.id}')">${t.label}</button>`
+  ).join('');
+}
+
+function switchTab(id) {
+  currentTab = id;
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.classList.toggle('active', b.textContent.trim() === (id === 'queens' ? '♛ All Queens' : id.replace('season:', '')));
+  });
+
+  if (id === 'queens') {
+    document.getElementById('tabQueens').style.display = '';
+    document.getElementById('tabTrack').style.display = 'none';
+  } else {
+    document.getElementById('tabQueens').style.display = 'none';
+    document.getElementById('tabTrack').style.display = '';
+    renderTrack(id.replace('season:', ''));
+  }
+}
+
+/* ─── LEGEND ─── */
+function buildLegend() {
+  document.getElementById('legend').innerHTML = LEGEND_ITEMS.map(it => `
+    <div class="legend-item">
+      <span class="legend-badge ${RESULT_CLASS[it.code]}">${it.code}</span>
+      ${it.label}
+    </div>`).join('');
+}
+
+/* ─── TRACK RECORD GRID ─── */
+function renderTrack(seasonName) {
+  const container = document.getElementById('trackContainer');
+
+  // Find the season object from SEASONS_DATA
+  const season = SEASONS_DATA.find(s => s.season === seasonName);
+  if (!season || !season.episodes || season.episodes.length === 0) {
+    // Fallback: show queens who appeared but no episode data
+    const queens = QUEENS.filter(q => q.seasons.some(s => s.season === seasonName));
+    if (!queens.length) {
+      container.innerHTML = `<div class="empty"><div class="empty-icon">🎬</div><p>No data for ${seasonName} yet.</p></div>`;
+      return;
+    }
+    container.innerHTML = `<div class="empty"><div class="empty-icon">📋</div><p>No episode track records added for ${seasonName} yet. Add episodes to your seasons array in queens.json!</p></div>`;
+    return;
+  }
+
+  const eps = season.episodes;
+  const queens = QUEENS.filter(q => q.seasons.some(s => s.season === seasonName));
+
+  // Sort queens: winners first, then by # of wins desc, then alpha
+  queens.sort((a, b) => {
+    const getWins = q => {
+      const sr = q.seasons.find(s => s.season === seasonName);
+      if (!sr) return 0;
+      const pc = placementClass(sr.placement);
+      return pc === 'p-winner' ? 100 : pc === 'p-second' ? 50 : 0;
+    };
+    const winsA = getWins(a), winsB = getWins(b);
+    if (winsB !== winsA) return winsB - winsA;
+    return a.name.localeCompare(b.name);
+  });
+
+  // Build episode header cells
+  const epHeaders = eps.map((ep, i) => {
+    const hasLS = ep.lipSyncSong;
+    return `<th class="ep-th">
+      <div class="ep-head">
+        <span class="ep-num">Ep ${ep.episode ?? (i + 1)}</span>
+        ${hasLS ? `<span class="ep-lipsync">♫</span>` : ''}
+      </div>
+    </th>`;
+  }).join('');
+
+  // Build rows
+  const rows = queens.map(queen => {
+    const cells = eps.map(ep => {
+      const track = ep.results && ep.results[queen.name];
+      const code = track ? String(track).toUpperCase().trim() : 'MISS';
+      const cls = resultClass(code);
+      const ls = ep.lipSyncSong;
+      if (ls) {
+        return `<td class="result-cell" data-lipsync="1">
+          <span class="result-badge ${cls}">${code}</span>
+          <span class="tooltip">${ls}</span>
+        </td>`;
+      }
+      return `<td class="result-cell"><span class="result-badge ${cls}">${code}</span></td>`;
+    }).join('');
+
+    return `<tr>
+      <td class="queen-cell">${queen.name}</td>
+      ${cells}
+    </tr>`;
+  }).join('');
+
+  container.innerHTML = `
+    <div class="season-section">
+      <div class="season-header">
+        <span class="season-title">${seasonName}</span>
+        <span class="season-ep-count">${eps.length} episode${eps.length !== 1 ? 's' : ''} · ${queens.length} queen${queens.length !== 1 ? 's' : ''}</span>
+      </div>
+      <div class="track-wrap">
+        <table class="track">
+          <thead>
+            <tr>
+              <th style="position:sticky;left:0;background:var(--surface);z-index:3;">Queen</th>
+              ${epHeaders}
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>`;
+}
+
+/* ─── QUEEN BROWSE ─── */
 function render() {
-  const query = document.getElementById("searchInput").value.trim().toLowerCase();
-  const container = document.getElementById("queensContainer");
-  const label = document.getElementById("resultsLabel");
-  const statsBar = document.getElementById("statsBar");
+  const query = document.getElementById('searchInput').value.trim().toLowerCase();
+  const container = document.getElementById('queensContainer');
+  const label = document.getElementById('resultsLabel');
+  const statsBar = document.getElementById('statsBar');
 
   const totalSeasons = QUEENS.reduce((a, q) => a + q.seasons.length, 0);
-  const winners = QUEENS.filter(q => q.seasons.some(s => placementClass(s.placement) === "p-winner")).length;
-
+  const winners = QUEENS.filter(q => q.seasons.some(s => placementClass(s.placement) === 'p-winner')).length;
   statsBar.innerHTML = `
     <div class="stat-pill"><strong>${QUEENS.length}</strong> Queens</div>
     <div class="stat-pill"><strong>${totalSeasons}</strong> Appearances</div>
@@ -630,94 +790,83 @@ function render() {
       sorted.map(q => `
         <div class="browse-card" onclick="searchFor('${q.name.replace(/'/g,"\\'")}')">
           <div class="bc-name">${q.name}</div>
-          <div class="bc-stat">${q.seasons.length} appearance${q.seasons.length !== 1 ? "s" : ""}</div>
-        </div>`).join("")
+          <div class="bc-stat">${q.seasons.length} appearance${q.seasons.length !== 1 ? 's' : ''}</div>
+        </div>`).join('')
     }</div>`;
     return;
   }
 
   const results = QUEENS.filter(q => q.name.toLowerCase().includes(query));
-  label.textContent = results.length ? `${results.length} queen${results.length !== 1 ? "s" : ""} found` : "";
+  label.textContent = results.length ? `${results.length} queen${results.length !== 1 ? 's' : ''} found` : '';
 
   if (!results.length) {
-    container.innerHTML = `
-      <div class="empty">
-        <div class="empty-icon">🪄</div>
-        <p>No queens found matching "<em>${query}</em>"</p>
-      </div>`;
+    container.innerHTML = `<div class="empty"><div class="empty-icon">🪄</div><p>No queens found matching "<em>${query}</em>"</p></div>`;
     return;
   }
 
-  container.innerHTML = `<div class="queens-grid">${
-    results.map(q => {
-      const wins = winCount(q);
-      const seasonsHTML = q.seasons.map(s => `
-        <div class="season-row ${placementClass(s.placement)}">
-          <span class="season-name">${s.season}</span>
-          <span class="placement-badge">${s.placement}</span>
-        </div>`).join("");
-
-      return `
-        <div class="queen-card">
-          <div class="queen-header">
-            <div class="queen-name">${q.name}</div>
-            <div class="queen-meta">
-              <span class="meta-chip">${q.seasons.length} appearance${q.seasons.length !== 1 ? "s" : ""}</span>
-              ${wins ? `<span class="meta-chip wins">♛ ${wins} win${wins !== 1 ? "s" : ""}</span>` : ""}
-            </div>
-          </div>
-          <div class="seasons-list">${seasonsHTML}</div>
-        </div>`;
-    }).join("")
+  container.innerHTML = `<div class="browse-grid">${
+    results.map(q => `
+      <div class="browse-card" onclick="searchFor('${q.name.replace(/'/g,"\\'")}')">
+        <div class="bc-name">${q.name}</div>
+        <div class="bc-stat">${q.seasons.length} appearance${q.seasons.length !== 1 ? 's' : ''}</div>
+      </div>`).join('')
   }</div>`;
 }
 
 function searchFor(name) {
-  document.getElementById("searchInput").value = name;
+  document.getElementById('searchInput').value = name;
   render();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-document.getElementById("searchInput").addEventListener("input", render);
+document.getElementById('searchInput').addEventListener('input', render);
 
+/* ─── LOAD DATA ─── */
 async function loadQueens() {
   try {
-    const res = await fetch("queens.json", { cache: "no-store" });
-    if (!res.ok) throw new Error(`Failed to load queens.json (${res.status})`);
+    const res = await fetch('queens.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error(`queens.json not found (${res.status})`);
     const data = await res.json();
-    QUEENS = Array.isArray(data) ? data : [];
+
+    // Support both old format (array of queens) and new format ({ queens, seasons })
+    if (Array.isArray(data)) {
+      QUEENS = data;
+      SEASONS_DATA = [];
+    } else {
+      QUEENS = data.queens || [];
+      SEASONS_DATA = data.seasons || [];
+    }
+
+    buildTabs();
+    buildLegend();
     render();
   } catch (err) {
     console.error(err);
-    showToast("Could not load queens.json");
-    document.getElementById("queensContainer").innerHTML = `
-      <div class="empty">
-        <div class="empty-icon">⚠️</div>
-        <p>Could not load queens.json</p>
-      </div>`;
+    showToast('Could not load queens.json');
+    document.getElementById('queensContainer').innerHTML = `
+      <div class="empty"><div class="empty-icon">⚠️</div><p>Could not load queens.json</p></div>`;
   }
 }
 
+/* ─── LOGIN ─── */
 async function checkCode() {
-  const val = document.getElementById("codeInput").value;
+  const val = document.getElementById('codeInput').value;
   if (val === SECRET) {
-    authenticated = true;
-    document.getElementById("codeError").textContent = "";
-    document.getElementById("modalOverlay").classList.remove("open");
-    document.getElementById("appWrap").style.display = "block";
+    document.getElementById('codeError').textContent = '';
+    document.getElementById('modalOverlay').classList.remove('open');
+    document.getElementById('appWrap').style.display = 'block';
     await loadQueens();
-    setTimeout(() => document.getElementById("searchInput").focus(), 50);
+    setTimeout(() => document.getElementById('searchInput').focus(), 50);
   } else {
-    document.getElementById("codeError").textContent = "Wrong code, honey. Try again! 💅";
-    document.getElementById("codeInput").value = "";
-    document.getElementById("codeInput").focus();
+    document.getElementById('codeError').textContent = "Wrong code, honey. Try again! 💅";
+    document.getElementById('codeInput').value = '';
+    document.getElementById('codeInput').focus();
   }
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("appWrap").style.display = "none";
-  document.getElementById("modalOverlay").classList.add("open");
-  document.getElementById("codeInput").focus();
+window.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('modalOverlay').classList.add('open');
+  document.getElementById('codeInput').focus();
 });
 </script>
 </body>
