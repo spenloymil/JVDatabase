@@ -26,7 +26,8 @@
     "JV vs The Universe Season 2",
     "Season 16",
     "Season 17",
-    "All Stars 8"
+    "All Stars 8",
+    "Season 18"
   ],
   "queens": [
     {
@@ -2601,6 +2602,146 @@
           "season": "Season 17",
           "placement": "Winner",
           "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Camille Duvall",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "14th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Bea Sterling",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "13th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Ivy Ember",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "12th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Bianca Nocturne",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Lea Diamond",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "10th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Saucy Love Fontaine",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Coco Crush",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Winnie Storm",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "7th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Berri",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "6th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Brenda Kowalski",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "5th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Mimi BonBon",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "4th",
+          "challenge_wins": 2
+        }
+      ]
+    },
+    {
+      "name": "Kiki Kiwi",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "3rd",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Marquesa Diamond",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "Runner Up",
+          "challenge_wins": 4
+        }
+      ]
+    },
+    {
+      "name": "Bunny Bordeaux",
+      "seasons": [
+        {
+          "season": "Season 18",
+          "placement": "Winner",
+          "challenge_wins": 4
         }
       ]
     }
