@@ -30,6 +30,15 @@
   h1{font-weight:700;font-size:clamp(1.7rem,4vw,2.2rem);letter-spacing:-.01em}
   .sub{color:var(--muted);font-size:.85rem;font-family:'JetBrains Mono',monospace}
 
+  /* ── Nav ── */
+  .nav-tabs{display:flex;gap:.5rem;margin-bottom:.5rem}
+  .nav-tab{
+    font-size:.85rem; font-weight:600; color:var(--muted); padding:.5rem .2rem; cursor:pointer;
+    border-bottom:2px solid transparent; transition:.15s;
+  }
+  .nav-tab.active{color:var(--lime);border-bottom-color:var(--lime)}
+  .nav-tab:hover:not(.active){color:var(--text)}
+
   /* ── Search ── */
   .search-row{display:flex;gap:.6rem;margin:1.75rem 0 1rem}
   input[type=text]{
@@ -111,6 +120,38 @@
   .empty{text-align:center;padding:3rem 1rem;color:var(--muted)}
   .empty-icon{font-size:2rem;margin-bottom:.6rem}
 
+  /* ── Hall of Fame ── */
+  .hof-toolbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:1.75rem}
+  .hof-franchise-tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-left:.3rem}
+
+  .timeline{position:relative;padding-left:1.9rem}
+  .timeline::before{
+    content:''; position:absolute; left:6px; top:.5rem; bottom:.5rem; width:2px;
+    background:linear-gradient(var(--border2),var(--border2) 90%,transparent);
+  }
+  .tl-item{position:relative;padding-bottom:1.9rem}
+  .tl-item:last-child{padding-bottom:0}
+  .tl-dot{
+    position:absolute; left:-1.9rem; top:.35rem; width:14px; height:14px; border-radius:50%;
+    background:var(--bg); border:2.5px solid var(--lime); box-shadow:0 0 8px rgba(155,229,100,.4);
+  }
+  .tl-dot.no-winner{border-color:var(--border2);box-shadow:none}
+
+  .tl-card{background:var(--card);border:1.5px solid var(--border);border-radius:14px;padding:1.1rem 1.35rem}
+  .tl-meta{display:flex;align-items:center;gap:.55rem;margin-bottom:.6rem;flex-wrap:wrap}
+  .tl-season{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--muted);letter-spacing:.03em}
+  .tl-franchise{
+    font-family:'JetBrains Mono',monospace;font-size:.62rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.06em;color:var(--lime-dim);background:rgba(155,229,100,.08);
+    border:1px solid rgba(155,229,100,.2);border-radius:6px;padding:.1rem .5rem;
+  }
+  .tl-winner-row{display:flex;align-items:center;gap:.55rem;margin-bottom:.15rem}
+  .tl-crown{font-size:1.3rem;line-height:1}
+  .tl-winner{font-weight:700;font-size:1.3rem;color:var(--text);line-height:1.2}
+  .tl-winner.none{color:var(--muted);font-weight:500;font-size:1rem;font-style:italic}
+  .tl-runnerup{font-size:.78rem;color:var(--muted);padding-left:2rem}
+  .tl-runnerup b{color:var(--muted);font-weight:600}
+
   /* ── Admin modal ── */
   .modal-overlay{
     position:fixed;inset:0;background:rgba(4,8,6,.85);backdrop-filter:blur(6px);z-index:200;
@@ -157,16 +198,28 @@
     <div class="sub">// july &amp; vivianna's fantasy drag race franchise</div>
   </div>
 
-  <div class="search-row">
-    <input type="text" id="searchInput" placeholder="search queens by name..." autocomplete="off" spellcheck="false"/>
+  <div class="nav-tabs" id="navTabs">
+    <span class="nav-tab active" data-view="database" onclick="setView('database')">Database</span>
+    <span class="nav-tab" data-view="hof" onclick="setView('hof')">Hall of Fame</span>
   </div>
 
-  <div class="toolbar" id="toolbar"></div>
+  <div id="databaseView">
+    <div class="search-row">
+      <input type="text" id="searchInput" placeholder="search queens by name..." autocomplete="off" spellcheck="false"/>
+    </div>
 
-  <div class="stats-row" id="statsBar"></div>
+    <div class="toolbar" id="toolbar"></div>
 
-  <div class="results-label" id="resultsLabel"></div>
-  <div id="queensContainer"></div>
+    <div class="stats-row" id="statsBar"></div>
+
+    <div class="results-label" id="resultsLabel"></div>
+    <div id="queensContainer"></div>
+  </div>
+
+  <div id="hofView" style="display:none">
+    <div class="hof-toolbar" id="hofToolbar"></div>
+    <div id="hofContainer"></div>
+  </div>
 </div>
 
 <div class="modal-overlay open" id="modalOverlay">
@@ -184,6 +237,7 @@
 
 <script>
 let QUEENS = [];
+let SEASON_ORDER = [];
 const SECRET = "SPORKY";
 let authenticated = false;
 
@@ -192,6 +246,11 @@ let searchQuery = "";
 let selectedFranchise = "All";
 let selectedSeason = "All";
 let sortMode = "name";
+
+/* view state */
+let currentView = "database";   // "database" | "hof"
+let hofMode = "timeline";       // "timeline" | "franchise"
+let hofFranchise = null;
 
 /* ── Franchise / season derivation (nothing hardcoded — computed from whatever's in queens.json) ── */
 
@@ -271,6 +330,107 @@ function showToast(msg) {
   t.textContent = msg;
   t.classList.add("show");
   setTimeout(() => t.classList.remove("show"), 2200);
+}
+
+/* ── Hall of Fame ── */
+
+// Defensive: if a season exists in the data but wasn't in season_order (e.g. someone
+// hand-edited the JSON), tack it on the end rather than silently dropping it.
+function getEffectiveSeasonOrder() {
+  const known = new Set(SEASON_ORDER);
+  const missing = [...getAllSeasonEntries().keys()].filter(s => !known.has(s));
+  missing.sort(naturalSeasonSort);
+  return [...SEASON_ORDER, ...missing];
+}
+
+function seasonResult(seasonName) {
+  const winners = [];
+  const runnerups = [];
+  QUEENS.forEach(q => (q.seasons || []).forEach(s => {
+    if (s.season !== seasonName) return;
+    const cls = placementClass(s.placement);
+    if (cls === "winner") winners.push(q.name);
+    else if (cls === "second") runnerups.push(q.name);
+  }));
+  return { winners, runnerups };
+}
+
+function setView(view) {
+  currentView = view;
+  document.querySelectorAll(".nav-tab").forEach(t => t.classList.toggle("active", t.dataset.view === view));
+  document.getElementById("databaseView").style.display = view === "database" ? "block" : "none";
+  document.getElementById("hofView").style.display = view === "hof" ? "block" : "none";
+  if (view === "hof") renderHof();
+}
+
+function setHofMode(mode) {
+  hofMode = mode;
+  if (mode === "franchise" && !hofFranchise) {
+    hofFranchise = getFranchiseList()[0] || null;
+  }
+  renderHof();
+}
+
+function setHofFranchise(f) {
+  hofFranchise = f;
+  renderHof();
+}
+
+function renderHofToolbar() {
+  const toolbar = document.getElementById("hofToolbar");
+  const franchises = getFranchiseList();
+
+  const franchiseTabsHTML = hofMode === "franchise"
+    ? `<div class="hof-franchise-tabs">${
+        franchises.map(f => `<span class="tab ${f === hofFranchise ? "active" : ""}" onclick="setHofFranchise('${f.replace(/'/g, "\\'")}')">${f}</span>`).join("")
+      }</div>`
+    : "";
+
+  toolbar.innerHTML = `
+    <span class="tab ${hofMode === "timeline" ? "active" : ""}" onclick="setHofMode('timeline')">Timeline</span>
+    <span class="tab ${hofMode === "franchise" ? "active" : ""}" onclick="setHofMode('franchise')">By Franchise</span>
+    ${franchiseTabsHTML}
+  `;
+}
+
+function renderHof() {
+  renderHofToolbar();
+  const container = document.getElementById("hofContainer");
+  const order = getEffectiveSeasonOrder();
+  const seasons = hofMode === "franchise" && hofFranchise
+    ? order.filter(s => franchiseOf(s) === hofFranchise)
+    : order;
+
+  if (!seasons.length) {
+    container.innerHTML = `<div class="empty"><div class="empty-icon">👑</div><p>No seasons recorded yet.</p></div>`;
+    return;
+  }
+
+  container.innerHTML = `<div class="timeline">${
+    seasons.map(season => {
+      const { winners, runnerups } = seasonResult(season);
+      const hasWinner = winners.length > 0;
+      const winnerHTML = hasWinner
+        ? `<div class="tl-winner-row"><span class="tl-crown">👑</span><span class="tl-winner">${winners.join(" & ")}</span></div>`
+        : `<div class="tl-winner-row"><span class="tl-winner none">No winner recorded</span></div>`;
+      const runnerupHTML = runnerups.length
+        ? `<div class="tl-runnerup"><b>Runner-up:</b> ${runnerups.join(" & ")}</div>`
+        : "";
+
+      return `
+        <div class="tl-item">
+          <span class="tl-dot ${hasWinner ? "" : "no-winner"}"></span>
+          <div class="tl-card">
+            <div class="tl-meta">
+              <span class="tl-season">${season}</span>
+              <span class="tl-franchise">${franchiseOf(season)}</span>
+            </div>
+            ${winnerHTML}
+            ${runnerupHTML}
+          </div>
+        </div>`;
+    }).join("")
+  }</div>`;
 }
 
 /* ── Toolbar (franchise tabs + season select + sort select) ── */
@@ -434,7 +594,16 @@ async function loadQueens() {
     const res = await fetch("queens.json", { cache: "no-store" });
     if (!res.ok) throw new Error(`Failed to load queens.json (${res.status})`);
     const data = await res.json();
-    QUEENS = Array.isArray(data) ? data : [];
+
+    if (Array.isArray(data)) {
+      // old format: plain array of queens, no stored season order
+      QUEENS = data;
+      SEASON_ORDER = [];
+    } else {
+      QUEENS = Array.isArray(data.queens) ? data.queens : [];
+      SEASON_ORDER = Array.isArray(data.season_order) ? data.season_order : [];
+    }
+
     renderToolbar();
     render();
   } catch (err) {
