@@ -1,2577 +1,2608 @@
-[
-  {
-    "name": "Plastica",
-    "seasons": [
-      {
-        "season": "Season 1",
-        "placement": "Winner",
-        "challenge_wins": 3
-      },
-      {
-        "season": "All Stars 3",
-        "placement": "3rd",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Saturn",
-    "seasons": [
-      {
-        "season": "Season 1",
-        "placement": "Runner Up",
-        "challenge_wins": 1
-      },
-      {
-        "season": "All Stars 1",
-        "placement": "5th",
-        "challenge_wins": 2
-      },
-      {
-        "season": "JV vs The Universe",
-        "placement": "Winner",
-        "challenge_wins": 3
-      },
-      {
-        "season": "All Stars 5",
-        "placement": "8-5th",
-        "challenge_wins": 2
-      }
-    ]
-  },
-  {
-    "name": "Lida La' Rue",
-    "seasons": [
-      {
-        "season": "Season 1",
-        "placement": "3rd",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 2",
-        "placement": "4th",
-        "challenge_wins": 3
-      },
-      {
-        "season": "All Stars 6",
-        "placement": "7th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Viva Queen",
-    "seasons": [
-      {
-        "season": "Season 1",
-        "placement": "4th",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 1",
-        "placement": "8th",
-        "challenge_wins": 1
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "18-11th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Kirana",
-    "seasons": [
-      {
-        "season": "Season 1",
-        "placement": "5th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Lifita",
-    "seasons": [
-      {
-        "season": "Season 1",
-        "placement": "6th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 1",
-        "placement": "7th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "10th-15th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Miss Frida B",
-    "seasons": [
-      {
-        "season": "Season 1",
-        "placement": "7th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 2",
-        "placement": "Winner",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Mellow",
-    "seasons": [
-      {
-        "season": "Season 1",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Aqua",
-    "seasons": [
-      {
-        "season": "Season 2",
-        "placement": "Winner",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 5",
-        "placement": "Winner",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Mystic Mirage",
-    "seasons": [
-      {
-        "season": "Season 2",
-        "placement": "Runner Up",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 1",
-        "placement": "4th",
-        "challenge_wins": 2
-      },
-      {
-        "season": "JV vs The Universe",
-        "placement": "12th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Slowaha Imana",
-    "seasons": [
-      {
-        "season": "Season 2",
-        "placement": "3/4th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 1",
-        "placement": "6th",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "Winner",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 5",
-        "placement": "8-5th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Lexina",
-    "seasons": [
-      {
-        "season": "Season 2",
-        "placement": "3/4th",
-        "challenge_wins": 1
-      },
-      {
-        "season": "All Stars 1",
-        "placement": "3rd",
-        "challenge_wins": 1
-      },
-      {
-        "season": "All Stars 3",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Miss Niyakatowa",
-    "seasons": [
-      {
-        "season": "Season 2",
-        "placement": "5th",
-        "challenge_wins": 1
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "3/4th",
-        "challenge_wins": 2
-      }
-    ]
-  },
-  {
-    "name": "Trisha Trash",
-    "seasons": [
-      {
-        "season": "Season 2",
-        "placement": "6th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 3",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Velvet Vex",
-    "seasons": [
-      {
-        "season": "Season 2",
-        "placement": "7th",
-        "challenge_wins": 1
-      },
-      {
-        "season": "All Stars 2",
-        "placement": "11th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 8",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Duchess",
-    "seasons": [
-      {
-        "season": "Season 2",
-        "placement": "8th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 1",
-        "placement": "Runner Up",
-        "challenge_wins": 3
-      },
-      {
-        "season": "All Stars 3",
-        "placement": "4th",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Koko",
-    "seasons": [
-      {
-        "season": "Season 2",
-        "placement": "9th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 2",
-        "placement": "6th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Ruby Ray",
-    "seasons": [
-      {
-        "season": "Season 2",
-        "placement": "10th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 3",
-        "placement": "5th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Adorablè",
-    "seasons": [
-      {
-        "season": "Season 3",
-        "placement": "Winner",
-        "challenge_wins": 2
-      }
-    ]
-  },
-  {
-    "name": "Sasha Fierce",
-    "seasons": [
-      {
-        "season": "Season 3",
-        "placement": "Runner Up",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 2",
-        "placement": "10th",
-        "challenge_wins": 1
-      },
-      {
-        "season": "JV vs The Universe Season 2",
-        "placement": "11th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Tiana St. Claire",
-    "seasons": [
-      {
-        "season": "Season 3",
-        "placement": "3/4th",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 1",
-        "placement": "Winner",
-        "challenge_wins": 5
-      },
-      {
-        "season": "All Stars 5",
-        "placement": "3rd/4th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Jupiter",
-    "seasons": [
-      {
-        "season": "Season 3",
-        "placement": "3/4th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 3",
-        "placement": "Winner",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 5",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Honey Muffin",
-    "seasons": [
-      {
-        "season": "Season 3",
-        "placement": "5th",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 2",
-        "placement": "8th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "ZigZag",
-    "seasons": [
-      {
-        "season": "Season 3",
-        "placement": "6th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 1",
-        "placement": "10th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "5-8th",
-        "challenge_wins": 3
-      },
-      {
-        "season": "All Stars 6",
-        "placement": "6th",
-        "challenge_wins": 2
-      }
-    ]
-  },
-  {
-    "name": "Ms. Geek",
-    "seasons": [
-      {
-        "season": "Season 3",
-        "placement": "7th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 1",
-        "placement": "9th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "18-11th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Lorena",
-    "seasons": [
-      {
-        "season": "Season 3",
-        "placement": "8th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Fattie Patti",
-    "seasons": [
-      {
-        "season": "Season 3",
-        "placement": "9th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 2",
-        "placement": "12th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Poolina",
-    "seasons": [
-      {
-        "season": "Season 3",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Cryztal Ballz",
-    "seasons": [
-      {
-        "season": "Season 3",
-        "placement": "11th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "10th-15th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Crystal V. Couture",
-    "seasons": [
-      {
-        "season": "Season 4",
-        "placement": "Winner",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 5",
-        "placement": "3rd/4th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Jabba The Slut",
-    "seasons": [
-      {
-        "season": "Season 4",
-        "placement": "Runner Up",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 2",
-        "placement": "9th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Ophelia Balls",
-    "seasons": [
-      {
-        "season": "Season 4",
-        "placement": "3rd",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Echo Baby",
-    "seasons": [
-      {
-        "season": "Season 4",
-        "placement": "4th",
-        "challenge_wins": 1
-      },
-      {
-        "season": "All Stars 3",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Zoella",
-    "seasons": [
-      {
-        "season": "Season 4",
-        "placement": "5/6th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 2",
-        "placement": "7th",
-        "challenge_wins": 1
-      },
-      {
-        "season": "All Stars 8",
-        "placement": "11th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Camilla VanTassle",
-    "seasons": [
-      {
-        "season": "Season 4",
-        "placement": "5/6th",
-        "challenge_wins": 1
-      },
-      {
-        "season": "All Stars 3",
-        "placement": "12th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Sue Flay",
-    "seasons": [
-      {
-        "season": "Season 4",
-        "placement": "7th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "JV vs The Universe",
-        "placement": "7th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "18-11th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Kandy La'Rue",
-    "seasons": [
-      {
-        "season": "Season 4",
-        "placement": "8th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Kitty Sinister",
-    "seasons": [
-      {
-        "season": "Season 4",
-        "placement": "9th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Sporky La'Spork",
-    "seasons": [
-      {
-        "season": "Season 4",
-        "placement": "10th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 2",
-        "placement": "Runner Up",
-        "challenge_wins": 3
-      },
-      {
-        "season": "JV vs The Universe",
-        "placement": "3rd",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "5-8th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 6",
-        "placement": "4th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Serpenta",
-    "seasons": [
-      {
-        "season": "Season 5",
-        "placement": "Winner",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "XoXo",
-    "seasons": [
-      {
-        "season": "Season 5",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "5-8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Miss Mable",
-    "seasons": [
-      {
-        "season": "Season 5",
-        "placement": "Runner Up",
-        "challenge_wins": 1
-      },
-      {
-        "season": "All Stars 2",
-        "placement": "3rd",
-        "challenge_wins": 2
-      }
-    ]
-  },
-  {
-    "name": "Molloe",
-    "seasons": [
-      {
-        "season": "Season 5",
-        "placement": "4th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "JV vs The Universe",
-        "placement": "4th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Shiny Pie",
-    "seasons": [
-      {
-        "season": "Season 5",
-        "placement": "5th",
-        "challenge_wins": 1
-      },
-      {
-        "season": "All Stars 3",
-        "placement": "7th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Marvelo Queen Jr.",
-    "seasons": [
-      {
-        "season": "Season 5",
-        "placement": "6th",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 2",
-        "placement": "5th",
-        "challenge_wins": 3
-      },
-      {
-        "season": "JV vs The Universe Season 2",
-        "placement": "6th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Nikiana",
-    "seasons": [
-      {
-        "season": "Season 5",
-        "placement": "7th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "5-8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Koin",
-    "seasons": [
-      {
-        "season": "Season 5",
-        "placement": "8th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "18-11th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Kaasi",
-    "seasons": [
-      {
-        "season": "Season 5",
-        "placement": "9th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "18-11th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Coala",
-    "seasons": [
-      {
-        "season": "Season 5",
-        "placement": "10th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "10th-15th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Tangy",
-    "seasons": [
-      {
-        "season": "Season 6",
-        "placement": "Winner",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Davé",
-    "seasons": [
-      {
-        "season": "Season 6",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 3",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 6",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      },
-      {
-        "season": "JV vs The Universe Season 2",
-        "placement": "Runner Up",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Lola Lush",
-    "seasons": [
-      {
-        "season": "Season 6",
-        "placement": "3rd",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Gemma Petals",
-    "seasons": [
-      {
-        "season": "Season 6",
-        "placement": "4th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Raven Synn",
-    "seasons": [
-      {
-        "season": "Season 6",
-        "placement": "5th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Laya V. Couture",
-    "seasons": [
-      {
-        "season": "Season 6",
-        "placement": "6th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "10th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "10th-15th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Vannessa Vonté",
-    "seasons": [
-      {
-        "season": "Season 6",
-        "placement": "7th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 3",
-        "placement": "6th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Snookie Sinclair",
-    "seasons": [
-      {
-        "season": "Season 6",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Kikiana",
-    "seasons": [
-      {
-        "season": "Season 6",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Velvet Hiss",
-    "seasons": [
-      {
-        "season": "Season 6",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Gigi Goode",
-    "seasons": [
-      {
-        "season": "JV vs The Universe",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Morphine Love Dion",
-    "seasons": [
-      {
-        "season": "JV vs The Universe",
-        "placement": "5th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Chai T Grande",
-    "seasons": [
-      {
-        "season": "JV vs The Universe",
-        "placement": "6th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Acacia Forgot",
-    "seasons": [
-      {
-        "season": "JV vs The Universe",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Coke Lipa",
-    "seasons": [
-      {
-        "season": "JV vs The Universe",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Marina Summers",
-    "seasons": [
-      {
-        "season": "JV vs The Universe",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Mattel Doll",
-    "seasons": [
-      {
-        "season": "JV vs The Universe",
-        "placement": "11th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Kiss Kiss X",
-    "seasons": [
-      {
-        "season": "Season 7",
-        "placement": "Winner",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 5",
-        "placement": "8-5th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Trixie Grindr",
-    "seasons": [
-      {
-        "season": "Season 7",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "18-11th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 8",
-        "placement": "5th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Lovelace",
-    "seasons": [
-      {
-        "season": "Season 7",
-        "placement": "3rd",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Deb U'Taunt",
-    "seasons": [
-      {
-        "season": "Season 7",
-        "placement": "4th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Zahira D",
-    "seasons": [
-      {
-        "season": "Season 7",
-        "placement": "5th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Dior Valentine",
-    "seasons": [
-      {
-        "season": "Season 7",
-        "placement": "6th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 3",
-        "placement": "11th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 6",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Aura Crystál",
-    "seasons": [
-      {
-        "season": "Season 7",
-        "placement": "7th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "10th-15th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Lettuce",
-    "seasons": [
-      {
-        "season": "Season 7",
-        "placement": "8th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 6",
-        "placement": "Winner",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Sir. Vin Luxe",
-    "seasons": [
-      {
-        "season": "Season 7",
-        "placement": "9th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "18-11th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Sia Later",
-    "seasons": [
-      {
-        "season": "Season 7",
-        "placement": "10th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "JV vs The Universe Season 2",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Gigi Fuego",
-    "seasons": [
-      {
-        "season": "Season 8",
-        "placement": "Winner",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 5",
-        "placement": "8-5th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Lana Del Slay",
-    "seasons": [
-      {
-        "season": "Season 8",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "3/4th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Liva Luxe",
-    "seasons": [
-      {
-        "season": "Season 8",
-        "placement": "3/4th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 6",
-        "placement": "10th Place",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Mariah Scary",
-    "seasons": [
-      {
-        "season": "Season 8",
-        "placement": "3/4th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "4th-7th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Mixy Mallow",
-    "seasons": [
-      {
-        "season": "Season 8",
-        "placement": "5th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Dolly Lolly",
-    "seasons": [
-      {
-        "season": "Season 8",
-        "placement": "6th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Miss Snakeo",
-    "seasons": [
-      {
-        "season": "Season 8",
-        "placement": "7th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Nightshades",
-    "seasons": [
-      {
-        "season": "Season 8",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Trish Tush",
-    "seasons": [
-      {
-        "season": "Season 8",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Noelle",
-    "seasons": [
-      {
-        "season": "Season 8",
-        "placement": "10th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 4",
-        "placement": "18-11th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "4th-7th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Milky Way",
-    "seasons": [
-      {
-        "season": "Season 9",
-        "placement": "Winner",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Lady Marmalade",
-    "seasons": [
-      {
-        "season": "Season 9",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 6",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Vivian Fox",
-    "seasons": [
-      {
-        "season": "Season 9",
-        "placement": "3rd",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 8",
-        "placement": "7th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Miss Adora",
-    "seasons": [
-      {
-        "season": "Season 9",
-        "placement": "4th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Hazel Nutt",
-    "seasons": [
-      {
-        "season": "Season 9",
-        "placement": "5th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 6",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Rococo Jazz",
-    "seasons": [
-      {
-        "season": "Season 9",
-        "placement": "6th (Disqualified)",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "DeVayn",
-    "seasons": [
-      {
-        "season": "Season 9",
-        "placement": "7th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Joye Ryde",
-    "seasons": [
-      {
-        "season": "Season 9",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Amethyst",
-    "seasons": [
-      {
-        "season": "Season 9",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Vall Canno",
-    "seasons": [
-      {
-        "season": "Season 9",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Dua Licious",
-    "seasons": [
-      {
-        "season": "Season 10",
-        "placement": "Winner",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Bo Deysious",
-    "seasons": [
-      {
-        "season": "Season 10",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Miss Vanderlush",
-    "seasons": [
-      {
-        "season": "Season 10",
-        "placement": "3rd",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "4th-7th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Vanta Void",
-    "seasons": [
-      {
-        "season": "Season 10",
-        "placement": "4th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Dagger Doll",
-    "seasons": [
-      {
-        "season": "Season 10",
-        "placement": "5th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Alison Wonder",
-    "seasons": [
-      {
-        "season": "Season 10",
-        "placement": "6th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Minix Halo",
-    "seasons": [
-      {
-        "season": "Season 10",
-        "placement": "7th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Tina Takeout",
-    "seasons": [
-      {
-        "season": "Season 10",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Lavi Luxx",
-    "seasons": [
-      {
-        "season": "Season 10",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Jenna Rator",
-    "seasons": [
-      {
-        "season": "Season 10",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Salamander",
-    "seasons": [
-      {
-        "season": "Season 11",
-        "placement": "Winner",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Kitika",
-    "seasons": [
-      {
-        "season": "Season 11",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Mercury",
-    "seasons": [
-      {
-        "season": "Season 11",
-        "placement": "3rd",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 8",
-        "placement": "6th",
-        "challenge_wins": 2
-      }
-    ]
-  },
-  {
-    "name": "Blowa Me!",
-    "seasons": [
-      {
-        "season": "Season 11",
-        "placement": "4th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 6",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "HerShe",
-    "seasons": [
-      {
-        "season": "Season 11",
-        "placement": "5th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Eleanour V. Couture",
-    "seasons": [
-      {
-        "season": "Season 11",
-        "placement": "6th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Honey Harlot",
-    "seasons": [
-      {
-        "season": "Season 11",
-        "placement": "7th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 6",
-        "placement": "5th (Originally 10th)",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Queen Tia",
-    "seasons": [
-      {
-        "season": "Season 11",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Miss Mayhem",
-    "seasons": [
-      {
-        "season": "Season 11",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Regina Riot",
-    "seasons": [
-      {
-        "season": "Season 12",
-        "placement": "12th Place",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Lara",
-    "seasons": [
-      {
-        "season": "Season 12",
-        "placement": "11th Place",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Maya Myst",
-    "seasons": [
-      {
-        "season": "Season 12",
-        "placement": "10th Place",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Dahlia Drama",
-    "seasons": [
-      {
-        "season": "Season 12",
-        "placement": "9th Place",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Saffron Sky",
-    "seasons": [
-      {
-        "season": "Season 12",
-        "placement": "8th Place",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Jade",
-    "seasons": [
-      {
-        "season": "Season 12",
-        "placement": "7th Place",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 6",
-        "placement": "12th Place",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Tiana Tinsel",
-    "seasons": [
-      {
-        "season": "Season 12",
-        "placement": "6th Place",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Lola Rouge Royale",
-    "seasons": [
-      {
-        "season": "Season 12",
-        "placement": "5th Place",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "8th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 8",
-        "placement": "12th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Bliss",
-    "seasons": [
-      {
-        "season": "Season 12",
-        "placement": "3rd/4th Place",
-        "challenge_wins": 0
-      },
-      {
-        "season": "JV vs The Universe Season 2",
-        "placement": "Winner",
-        "challenge_wins": 2
-      }
-    ]
-  },
-  {
-    "name": "Juno",
-    "seasons": [
-      {
-        "season": "Season 12",
-        "placement": "3rd/4th Place",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "Winner",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Universe",
-    "seasons": [
-      {
-        "season": "Season 12",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Sugar Rush",
-    "seasons": [
-      {
-        "season": "Season 12",
-        "placement": "Winner",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Orangerina",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "14th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Gigi Coco",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "13th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Korea",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "12th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Gwendelacreme",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "11th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "America Fererra",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Silk",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "9th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "4th-7th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Fonda Lux",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Mickeyakatowa",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "7th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Dakota K. Fierce",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "6h",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Starbloom",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "3rd/4th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 7",
-        "placement": "Winner",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Alexia Blue",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "3rd/4th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Bambi",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 8",
-        "placement": "Runner Up",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Sapphire",
-    "seasons": [
-      {
-        "season": "Season 13",
-        "placement": "Winner",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Kitty Catastrophe",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "14th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Beef Supreme",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "13th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Britney Shears",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "12th (Orig 14th)",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Diamond",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "11th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Ariana Venti",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Morticia Hex",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "9th (Orig 13th)",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Astral Alura",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Meta Morphia",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "7th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Rita Brooke",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "6th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Crimson",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "5th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 8",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Forque",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "4th",
-        "challenge_wins": 0
-      },
-      {
-        "season": "All Stars 8",
-        "placement": "3rd",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Karma Khaos",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "3rd",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Lexi Con",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "Runner Up",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Zsa Zsa Vanté",
-    "seasons": [
-      {
-        "season": "Season 14",
-        "placement": "Winner",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Suki Sparkle",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "14th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Amie Zonite",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "13th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Mira La'Bloom",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "12th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Velvet Dollhouse",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "11th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Opal",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Vera Lush",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "9th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Lucky Drop",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "8th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Charli See Ya Ex",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "7th",
-        "challenge_wins": 2
-      }
-    ]
-  },
-  {
-    "name": "Trinity Royale",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "6th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Gaga Deluxe",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "5th",
-        "challenge_wins": 1
-      },
-      {
-        "season": "All Stars 8",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Manda Crème",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "4th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Geneva Cristàl",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "3rd",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Miss Big O",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "Runner Up",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Goldie",
-    "seasons": [
-      {
-        "season": "Season 15",
-        "placement": "Winner",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Galatea Genesis",
-    "seasons": [
-      {
-        "season": "JV vs The Universe Season 2",
-        "placement": "12th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Black Peppa",
-    "seasons": [
-      {
-        "season": "JV vs The Universe Season 2",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Kandy Zyanide",
-    "seasons": [
-      {
-        "season": "JV vs The Universe Season 2",
-        "placement": "8th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Suki Drip",
-    "seasons": [
-      {
-        "season": "JV vs The Universe Season 2",
-        "placement": "7th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Jujubee",
-    "seasons": [
-      {
-        "season": "JV vs The Universe Season 2",
-        "placement": "5th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Coco Cabana",
-    "seasons": [
-      {
-        "season": "JV vs The Universe Season 2",
-        "placement": "4th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Jane Don't",
-    "seasons": [
-      {
-        "season": "JV vs The Universe Season 2",
-        "placement": "Runner Up",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Queefie",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "14th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Magnolia Crawford",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "13th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Crysta",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "12th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Biggy B",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "11th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Foxie Fontaine",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Kiki McTwist",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "9th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Lacie Deluxe",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "7th/8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Miss Small O",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "7th/8th",
-        "challenge_wins": 2
-      }
-    ]
-  },
-  {
-    "name": "Luxx Goldleaf",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "6th (Orig 8th)",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Nadia Richeé",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "5th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Lamouré",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "3rd/4th",
-        "challenge_wins": 3
-      },
-      {
-        "season": "All Stars 8",
-        "placement": "Winner",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Robin LaBelle",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "3rd/4th",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Trinity Rosewood",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "Runner Up",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Bleach",
-    "seasons": [
-      {
-        "season": "Season 16",
-        "placement": "Winner",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Dominique LaRoux",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "14th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Darla Didit",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "13th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Foxie Skandál",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "12th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Gina Tonic",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "11th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Envy LaRoux",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "10th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Barbie Wire",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "9th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Delilah Couture",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "8th",
-        "challenge_wins": 0
-      }
-    ]
-  },
-  {
-    "name": "Crystal Chandelier",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "7th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Ivanna Pickle",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "6th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Izaak Scragg",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "5th",
-        "challenge_wins": 2
-      },
-      {
-        "season": "All Stars 8",
-        "placement": "4th",
-        "challenge_wins": 1
-      }
-    ]
-  },
-  {
-    "name": "Ari Monét",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "3rd/4th",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Jane Wax",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "3rd/4th",
-        "challenge_wins": 2
-      }
-    ]
-  },
-  {
-    "name": "Flambé",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "Runner Up",
-        "challenge_wins": 3
-      }
-    ]
-  },
-  {
-    "name": "Paige Turner",
-    "seasons": [
-      {
-        "season": "Season 17",
-        "placement": "Winner",
-        "challenge_wins": 3
-      }
-    ]
-  }
-]
+{
+  "season_order": [
+    "Season 1",
+    "Season 2",
+    "Season 3",
+    "Season 4",
+    "Season 5",
+    "Season 6",
+    "Season 7",
+    "Season 8",
+    "Season 9",
+    "Season 10",
+    "Season 11",
+    "Season 12",
+    "Season 13",
+    "Season 14",
+    "Season 15",
+    "Season 16",
+    "Season 17",
+    "All Stars 1",
+    "All Stars 2",
+    "All Stars 3",
+    "All Stars 4",
+    "All Stars 5",
+    "All Stars 6",
+    "All Stars 7",
+    "All Stars 8",
+    "JV vs The Universe",
+    "JV vs The Universe Season 2"
+  ],
+  "queens": [
+    {
+      "name": "Plastica",
+      "seasons": [
+        {
+          "season": "Season 1",
+          "placement": "Winner",
+          "challenge_wins": 3
+        },
+        {
+          "season": "All Stars 3",
+          "placement": "3rd",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Saturn",
+      "seasons": [
+        {
+          "season": "Season 1",
+          "placement": "Runner Up",
+          "challenge_wins": 1
+        },
+        {
+          "season": "All Stars 1",
+          "placement": "5th",
+          "challenge_wins": 2
+        },
+        {
+          "season": "JV vs The Universe",
+          "placement": "Winner",
+          "challenge_wins": 3
+        },
+        {
+          "season": "All Stars 5",
+          "placement": "8-5th",
+          "challenge_wins": 2
+        }
+      ]
+    },
+    {
+      "name": "Lida La' Rue",
+      "seasons": [
+        {
+          "season": "Season 1",
+          "placement": "3rd",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 2",
+          "placement": "4th",
+          "challenge_wins": 3
+        },
+        {
+          "season": "All Stars 6",
+          "placement": "7th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Viva Queen",
+      "seasons": [
+        {
+          "season": "Season 1",
+          "placement": "4th",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 1",
+          "placement": "8th",
+          "challenge_wins": 1
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "18-11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Kirana",
+      "seasons": [
+        {
+          "season": "Season 1",
+          "placement": "5th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Lifita",
+      "seasons": [
+        {
+          "season": "Season 1",
+          "placement": "6th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 1",
+          "placement": "7th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "10th-15th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Miss Frida B",
+      "seasons": [
+        {
+          "season": "Season 1",
+          "placement": "7th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 2",
+          "placement": "Winner",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Mellow",
+      "seasons": [
+        {
+          "season": "Season 1",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Aqua",
+      "seasons": [
+        {
+          "season": "Season 2",
+          "placement": "Winner",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 5",
+          "placement": "Winner",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Mystic Mirage",
+      "seasons": [
+        {
+          "season": "Season 2",
+          "placement": "Runner Up",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 1",
+          "placement": "4th",
+          "challenge_wins": 2
+        },
+        {
+          "season": "JV vs The Universe",
+          "placement": "12th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Slowaha Imana",
+      "seasons": [
+        {
+          "season": "Season 2",
+          "placement": "3/4th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 1",
+          "placement": "6th",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "Winner",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 5",
+          "placement": "8-5th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Lexina",
+      "seasons": [
+        {
+          "season": "Season 2",
+          "placement": "3/4th",
+          "challenge_wins": 1
+        },
+        {
+          "season": "All Stars 1",
+          "placement": "3rd",
+          "challenge_wins": 1
+        },
+        {
+          "season": "All Stars 3",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Miss Niyakatowa",
+      "seasons": [
+        {
+          "season": "Season 2",
+          "placement": "5th",
+          "challenge_wins": 1
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "3/4th",
+          "challenge_wins": 2
+        }
+      ]
+    },
+    {
+      "name": "Trisha Trash",
+      "seasons": [
+        {
+          "season": "Season 2",
+          "placement": "6th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 3",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Velvet Vex",
+      "seasons": [
+        {
+          "season": "Season 2",
+          "placement": "7th",
+          "challenge_wins": 1
+        },
+        {
+          "season": "All Stars 2",
+          "placement": "11th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 8",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Duchess",
+      "seasons": [
+        {
+          "season": "Season 2",
+          "placement": "8th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 1",
+          "placement": "Runner Up",
+          "challenge_wins": 3
+        },
+        {
+          "season": "All Stars 3",
+          "placement": "4th",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Koko",
+      "seasons": [
+        {
+          "season": "Season 2",
+          "placement": "9th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 2",
+          "placement": "6th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Ruby Ray",
+      "seasons": [
+        {
+          "season": "Season 2",
+          "placement": "10th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 3",
+          "placement": "5th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Adorablè",
+      "seasons": [
+        {
+          "season": "Season 3",
+          "placement": "Winner",
+          "challenge_wins": 2
+        }
+      ]
+    },
+    {
+      "name": "Sasha Fierce",
+      "seasons": [
+        {
+          "season": "Season 3",
+          "placement": "Runner Up",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 2",
+          "placement": "10th",
+          "challenge_wins": 1
+        },
+        {
+          "season": "JV vs The Universe Season 2",
+          "placement": "11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Tiana St. Claire",
+      "seasons": [
+        {
+          "season": "Season 3",
+          "placement": "3/4th",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 1",
+          "placement": "Winner",
+          "challenge_wins": 5
+        },
+        {
+          "season": "All Stars 5",
+          "placement": "3rd/4th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Jupiter",
+      "seasons": [
+        {
+          "season": "Season 3",
+          "placement": "3/4th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 3",
+          "placement": "Winner",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 5",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Honey Muffin",
+      "seasons": [
+        {
+          "season": "Season 3",
+          "placement": "5th",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 2",
+          "placement": "8th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "ZigZag",
+      "seasons": [
+        {
+          "season": "Season 3",
+          "placement": "6th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 1",
+          "placement": "10th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "5-8th",
+          "challenge_wins": 3
+        },
+        {
+          "season": "All Stars 6",
+          "placement": "6th",
+          "challenge_wins": 2
+        }
+      ]
+    },
+    {
+      "name": "Ms. Geek",
+      "seasons": [
+        {
+          "season": "Season 3",
+          "placement": "7th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 1",
+          "placement": "9th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "18-11th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Lorena",
+      "seasons": [
+        {
+          "season": "Season 3",
+          "placement": "8th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Fattie Patti",
+      "seasons": [
+        {
+          "season": "Season 3",
+          "placement": "9th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 2",
+          "placement": "12th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Poolina",
+      "seasons": [
+        {
+          "season": "Season 3",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Cryztal Ballz",
+      "seasons": [
+        {
+          "season": "Season 3",
+          "placement": "11th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "10th-15th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Crystal V. Couture",
+      "seasons": [
+        {
+          "season": "Season 4",
+          "placement": "Winner",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 5",
+          "placement": "3rd/4th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Jabba The Slut",
+      "seasons": [
+        {
+          "season": "Season 4",
+          "placement": "Runner Up",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 2",
+          "placement": "9th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Ophelia Balls",
+      "seasons": [
+        {
+          "season": "Season 4",
+          "placement": "3rd",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Echo Baby",
+      "seasons": [
+        {
+          "season": "Season 4",
+          "placement": "4th",
+          "challenge_wins": 1
+        },
+        {
+          "season": "All Stars 3",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Zoella",
+      "seasons": [
+        {
+          "season": "Season 4",
+          "placement": "5/6th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 2",
+          "placement": "7th",
+          "challenge_wins": 1
+        },
+        {
+          "season": "All Stars 8",
+          "placement": "11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Camilla VanTassle",
+      "seasons": [
+        {
+          "season": "Season 4",
+          "placement": "5/6th",
+          "challenge_wins": 1
+        },
+        {
+          "season": "All Stars 3",
+          "placement": "12th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Sue Flay",
+      "seasons": [
+        {
+          "season": "Season 4",
+          "placement": "7th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "JV vs The Universe",
+          "placement": "7th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "18-11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Kandy La'Rue",
+      "seasons": [
+        {
+          "season": "Season 4",
+          "placement": "8th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Kitty Sinister",
+      "seasons": [
+        {
+          "season": "Season 4",
+          "placement": "9th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Sporky La'Spork",
+      "seasons": [
+        {
+          "season": "Season 4",
+          "placement": "10th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 2",
+          "placement": "Runner Up",
+          "challenge_wins": 3
+        },
+        {
+          "season": "JV vs The Universe",
+          "placement": "3rd",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "5-8th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 6",
+          "placement": "4th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Serpenta",
+      "seasons": [
+        {
+          "season": "Season 5",
+          "placement": "Winner",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "XoXo",
+      "seasons": [
+        {
+          "season": "Season 5",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "5-8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Miss Mable",
+      "seasons": [
+        {
+          "season": "Season 5",
+          "placement": "Runner Up",
+          "challenge_wins": 1
+        },
+        {
+          "season": "All Stars 2",
+          "placement": "3rd",
+          "challenge_wins": 2
+        }
+      ]
+    },
+    {
+      "name": "Molloe",
+      "seasons": [
+        {
+          "season": "Season 5",
+          "placement": "4th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "JV vs The Universe",
+          "placement": "4th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Shiny Pie",
+      "seasons": [
+        {
+          "season": "Season 5",
+          "placement": "5th",
+          "challenge_wins": 1
+        },
+        {
+          "season": "All Stars 3",
+          "placement": "7th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Marvelo Queen Jr.",
+      "seasons": [
+        {
+          "season": "Season 5",
+          "placement": "6th",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 2",
+          "placement": "5th",
+          "challenge_wins": 3
+        },
+        {
+          "season": "JV vs The Universe Season 2",
+          "placement": "6th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Nikiana",
+      "seasons": [
+        {
+          "season": "Season 5",
+          "placement": "7th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "5-8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Koin",
+      "seasons": [
+        {
+          "season": "Season 5",
+          "placement": "8th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "18-11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Kaasi",
+      "seasons": [
+        {
+          "season": "Season 5",
+          "placement": "9th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "18-11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Coala",
+      "seasons": [
+        {
+          "season": "Season 5",
+          "placement": "10th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "10th-15th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Tangy",
+      "seasons": [
+        {
+          "season": "Season 6",
+          "placement": "Winner",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Davé",
+      "seasons": [
+        {
+          "season": "Season 6",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 3",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 6",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        },
+        {
+          "season": "JV vs The Universe Season 2",
+          "placement": "Runner Up",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Lola Lush",
+      "seasons": [
+        {
+          "season": "Season 6",
+          "placement": "3rd",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Gemma Petals",
+      "seasons": [
+        {
+          "season": "Season 6",
+          "placement": "4th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Raven Synn",
+      "seasons": [
+        {
+          "season": "Season 6",
+          "placement": "5th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Laya V. Couture",
+      "seasons": [
+        {
+          "season": "Season 6",
+          "placement": "6th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "10th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "10th-15th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Vannessa Vonté",
+      "seasons": [
+        {
+          "season": "Season 6",
+          "placement": "7th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 3",
+          "placement": "6th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Snookie Sinclair",
+      "seasons": [
+        {
+          "season": "Season 6",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Kikiana",
+      "seasons": [
+        {
+          "season": "Season 6",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Velvet Hiss",
+      "seasons": [
+        {
+          "season": "Season 6",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Gigi Goode",
+      "seasons": [
+        {
+          "season": "JV vs The Universe",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Morphine Love Dion",
+      "seasons": [
+        {
+          "season": "JV vs The Universe",
+          "placement": "5th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Chai T Grande",
+      "seasons": [
+        {
+          "season": "JV vs The Universe",
+          "placement": "6th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Acacia Forgot",
+      "seasons": [
+        {
+          "season": "JV vs The Universe",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Coke Lipa",
+      "seasons": [
+        {
+          "season": "JV vs The Universe",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Marina Summers",
+      "seasons": [
+        {
+          "season": "JV vs The Universe",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Mattel Doll",
+      "seasons": [
+        {
+          "season": "JV vs The Universe",
+          "placement": "11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Kiss Kiss X",
+      "seasons": [
+        {
+          "season": "Season 7",
+          "placement": "Winner",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 5",
+          "placement": "8-5th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Trixie Grindr",
+      "seasons": [
+        {
+          "season": "Season 7",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "18-11th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 8",
+          "placement": "5th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Lovelace",
+      "seasons": [
+        {
+          "season": "Season 7",
+          "placement": "3rd",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Deb U'Taunt",
+      "seasons": [
+        {
+          "season": "Season 7",
+          "placement": "4th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Zahira D",
+      "seasons": [
+        {
+          "season": "Season 7",
+          "placement": "5th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Dior Valentine",
+      "seasons": [
+        {
+          "season": "Season 7",
+          "placement": "6th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 3",
+          "placement": "11th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 6",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Aura Crystál",
+      "seasons": [
+        {
+          "season": "Season 7",
+          "placement": "7th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "10th-15th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Lettuce",
+      "seasons": [
+        {
+          "season": "Season 7",
+          "placement": "8th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 6",
+          "placement": "Winner",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Sir. Vin Luxe",
+      "seasons": [
+        {
+          "season": "Season 7",
+          "placement": "9th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "18-11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Sia Later",
+      "seasons": [
+        {
+          "season": "Season 7",
+          "placement": "10th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "JV vs The Universe Season 2",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Gigi Fuego",
+      "seasons": [
+        {
+          "season": "Season 8",
+          "placement": "Winner",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 5",
+          "placement": "8-5th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Lana Del Slay",
+      "seasons": [
+        {
+          "season": "Season 8",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "3/4th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Liva Luxe",
+      "seasons": [
+        {
+          "season": "Season 8",
+          "placement": "3/4th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 6",
+          "placement": "10th Place",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Mariah Scary",
+      "seasons": [
+        {
+          "season": "Season 8",
+          "placement": "3/4th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "4th-7th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Mixy Mallow",
+      "seasons": [
+        {
+          "season": "Season 8",
+          "placement": "5th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Dolly Lolly",
+      "seasons": [
+        {
+          "season": "Season 8",
+          "placement": "6th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Miss Snakeo",
+      "seasons": [
+        {
+          "season": "Season 8",
+          "placement": "7th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Nightshades",
+      "seasons": [
+        {
+          "season": "Season 8",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Trish Tush",
+      "seasons": [
+        {
+          "season": "Season 8",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Noelle",
+      "seasons": [
+        {
+          "season": "Season 8",
+          "placement": "10th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 4",
+          "placement": "18-11th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "4th-7th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Milky Way",
+      "seasons": [
+        {
+          "season": "Season 9",
+          "placement": "Winner",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Lady Marmalade",
+      "seasons": [
+        {
+          "season": "Season 9",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 6",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Vivian Fox",
+      "seasons": [
+        {
+          "season": "Season 9",
+          "placement": "3rd",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 8",
+          "placement": "7th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Miss Adora",
+      "seasons": [
+        {
+          "season": "Season 9",
+          "placement": "4th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Hazel Nutt",
+      "seasons": [
+        {
+          "season": "Season 9",
+          "placement": "5th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 6",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Rococo Jazz",
+      "seasons": [
+        {
+          "season": "Season 9",
+          "placement": "6th (Disqualified)",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "DeVayn",
+      "seasons": [
+        {
+          "season": "Season 9",
+          "placement": "7th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Joye Ryde",
+      "seasons": [
+        {
+          "season": "Season 9",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Amethyst",
+      "seasons": [
+        {
+          "season": "Season 9",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Vall Canno",
+      "seasons": [
+        {
+          "season": "Season 9",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Dua Licious",
+      "seasons": [
+        {
+          "season": "Season 10",
+          "placement": "Winner",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Bo Deysious",
+      "seasons": [
+        {
+          "season": "Season 10",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Miss Vanderlush",
+      "seasons": [
+        {
+          "season": "Season 10",
+          "placement": "3rd",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "4th-7th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Vanta Void",
+      "seasons": [
+        {
+          "season": "Season 10",
+          "placement": "4th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Dagger Doll",
+      "seasons": [
+        {
+          "season": "Season 10",
+          "placement": "5th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Alison Wonder",
+      "seasons": [
+        {
+          "season": "Season 10",
+          "placement": "6th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Minix Halo",
+      "seasons": [
+        {
+          "season": "Season 10",
+          "placement": "7th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Tina Takeout",
+      "seasons": [
+        {
+          "season": "Season 10",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Lavi Luxx",
+      "seasons": [
+        {
+          "season": "Season 10",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Jenna Rator",
+      "seasons": [
+        {
+          "season": "Season 10",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Salamander",
+      "seasons": [
+        {
+          "season": "Season 11",
+          "placement": "Winner",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Kitika",
+      "seasons": [
+        {
+          "season": "Season 11",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Mercury",
+      "seasons": [
+        {
+          "season": "Season 11",
+          "placement": "3rd",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 8",
+          "placement": "6th",
+          "challenge_wins": 2
+        }
+      ]
+    },
+    {
+      "name": "Blowa Me!",
+      "seasons": [
+        {
+          "season": "Season 11",
+          "placement": "4th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 6",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "HerShe",
+      "seasons": [
+        {
+          "season": "Season 11",
+          "placement": "5th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Eleanour V. Couture",
+      "seasons": [
+        {
+          "season": "Season 11",
+          "placement": "6th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Honey Harlot",
+      "seasons": [
+        {
+          "season": "Season 11",
+          "placement": "7th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 6",
+          "placement": "5th (Originally 10th)",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Queen Tia",
+      "seasons": [
+        {
+          "season": "Season 11",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Miss Mayhem",
+      "seasons": [
+        {
+          "season": "Season 11",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Regina Riot",
+      "seasons": [
+        {
+          "season": "Season 12",
+          "placement": "12th Place",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Lara",
+      "seasons": [
+        {
+          "season": "Season 12",
+          "placement": "11th Place",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Maya Myst",
+      "seasons": [
+        {
+          "season": "Season 12",
+          "placement": "10th Place",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Dahlia Drama",
+      "seasons": [
+        {
+          "season": "Season 12",
+          "placement": "9th Place",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Saffron Sky",
+      "seasons": [
+        {
+          "season": "Season 12",
+          "placement": "8th Place",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Jade",
+      "seasons": [
+        {
+          "season": "Season 12",
+          "placement": "7th Place",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 6",
+          "placement": "12th Place",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Tiana Tinsel",
+      "seasons": [
+        {
+          "season": "Season 12",
+          "placement": "6th Place",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Lola Rouge Royale",
+      "seasons": [
+        {
+          "season": "Season 12",
+          "placement": "5th Place",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "8th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 8",
+          "placement": "12th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Bliss",
+      "seasons": [
+        {
+          "season": "Season 12",
+          "placement": "3rd/4th Place",
+          "challenge_wins": 0
+        },
+        {
+          "season": "JV vs The Universe Season 2",
+          "placement": "Winner",
+          "challenge_wins": 2
+        }
+      ]
+    },
+    {
+      "name": "Juno",
+      "seasons": [
+        {
+          "season": "Season 12",
+          "placement": "3rd/4th Place",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "Winner",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Universe",
+      "seasons": [
+        {
+          "season": "Season 12",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Sugar Rush",
+      "seasons": [
+        {
+          "season": "Season 12",
+          "placement": "Winner",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Orangerina",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "14th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Gigi Coco",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "13th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Korea",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "12th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Gwendelacreme",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "America Fererra",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Silk",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "9th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "4th-7th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Fonda Lux",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Mickeyakatowa",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "7th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Dakota K. Fierce",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "6h",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Starbloom",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "3rd/4th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 7",
+          "placement": "Winner",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Alexia Blue",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "3rd/4th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Bambi",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 8",
+          "placement": "Runner Up",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Sapphire",
+      "seasons": [
+        {
+          "season": "Season 13",
+          "placement": "Winner",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Kitty Catastrophe",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "14th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Beef Supreme",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "13th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Britney Shears",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "12th (Orig 14th)",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Diamond",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Ariana Venti",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Morticia Hex",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "9th (Orig 13th)",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Astral Alura",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Meta Morphia",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "7th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Rita Brooke",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "6th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Crimson",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "5th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 8",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Forque",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "4th",
+          "challenge_wins": 0
+        },
+        {
+          "season": "All Stars 8",
+          "placement": "3rd",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Karma Khaos",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "3rd",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Lexi Con",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "Runner Up",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Zsa Zsa Vanté",
+      "seasons": [
+        {
+          "season": "Season 14",
+          "placement": "Winner",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Suki Sparkle",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "14th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Amie Zonite",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "13th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Mira La'Bloom",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "12th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Velvet Dollhouse",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Opal",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Vera Lush",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "9th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Lucky Drop",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "8th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Charli See Ya Ex",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "7th",
+          "challenge_wins": 2
+        }
+      ]
+    },
+    {
+      "name": "Trinity Royale",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "6th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Gaga Deluxe",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "5th",
+          "challenge_wins": 1
+        },
+        {
+          "season": "All Stars 8",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Manda Crème",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "4th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Geneva Cristàl",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "3rd",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Miss Big O",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "Runner Up",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Goldie",
+      "seasons": [
+        {
+          "season": "Season 15",
+          "placement": "Winner",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Galatea Genesis",
+      "seasons": [
+        {
+          "season": "JV vs The Universe Season 2",
+          "placement": "12th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Black Peppa",
+      "seasons": [
+        {
+          "season": "JV vs The Universe Season 2",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Kandy Zyanide",
+      "seasons": [
+        {
+          "season": "JV vs The Universe Season 2",
+          "placement": "8th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Suki Drip",
+      "seasons": [
+        {
+          "season": "JV vs The Universe Season 2",
+          "placement": "7th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Jujubee",
+      "seasons": [
+        {
+          "season": "JV vs The Universe Season 2",
+          "placement": "5th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Coco Cabana",
+      "seasons": [
+        {
+          "season": "JV vs The Universe Season 2",
+          "placement": "4th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Jane Don't",
+      "seasons": [
+        {
+          "season": "JV vs The Universe Season 2",
+          "placement": "Runner Up",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Queefie",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "14th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Magnolia Crawford",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "13th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Crysta",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "12th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Biggy B",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "11th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Foxie Fontaine",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Kiki McTwist",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "9th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Lacie Deluxe",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "7th/8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Miss Small O",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "7th/8th",
+          "challenge_wins": 2
+        }
+      ]
+    },
+    {
+      "name": "Luxx Goldleaf",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "6th (Orig 8th)",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Nadia Richeé",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "5th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Lamouré",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "3rd/4th",
+          "challenge_wins": 3
+        },
+        {
+          "season": "All Stars 8",
+          "placement": "Winner",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Robin LaBelle",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "3rd/4th",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Trinity Rosewood",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "Runner Up",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Bleach",
+      "seasons": [
+        {
+          "season": "Season 16",
+          "placement": "Winner",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Dominique LaRoux",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "14th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Darla Didit",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "13th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Foxie Skandál",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "12th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Gina Tonic",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "11th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Envy LaRoux",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "10th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Barbie Wire",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "9th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Delilah Couture",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "8th",
+          "challenge_wins": 0
+        }
+      ]
+    },
+    {
+      "name": "Crystal Chandelier",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "7th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Ivanna Pickle",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "6th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Izaak Scragg",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "5th",
+          "challenge_wins": 2
+        },
+        {
+          "season": "All Stars 8",
+          "placement": "4th",
+          "challenge_wins": 1
+        }
+      ]
+    },
+    {
+      "name": "Ari Monét",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "3rd/4th",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Jane Wax",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "3rd/4th",
+          "challenge_wins": 2
+        }
+      ]
+    },
+    {
+      "name": "Flambé",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "Runner Up",
+          "challenge_wins": 3
+        }
+      ]
+    },
+    {
+      "name": "Paige Turner",
+      "seasons": [
+        {
+          "season": "Season 17",
+          "placement": "Winner",
+          "challenge_wins": 3
+        }
+      ]
+    }
+  ]
+}
